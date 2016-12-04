@@ -159,26 +159,16 @@ torch.save('MyModel.dat',model)
 
 
 -- ********************* Plots *********************
---[[
+
 require 'gnuplot'
 local range = torch.range(1, epochs)
-gnuplot.pngfigure('test.png')
+gnuplot.pngfigure('Loss.png')
 gnuplot.plot({'trainLoss',trainLoss},{'testLoss',testLoss})
 gnuplot.xlabel('epochs')
 gnuplot.ylabel('Loss')
 gnuplot.plotflush()
-]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+gnuplot.pngfigure('Error.png')
+gnuplot.plot({'trainError',trainError},{'testError',testError})
+gnuplot.xlabel('epochs')
+gnuplot.ylabel('Error')
+gnuplot.plotflush()
