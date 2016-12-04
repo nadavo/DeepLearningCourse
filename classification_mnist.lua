@@ -26,7 +26,7 @@ require 'cunn'
 
 local inputSize = 28*28
 local outputSize = 10
-local layerSize = {inputSize, 32,64,128}
+local layerSize = {inputSize, 64,64,128}
 
 model = nn.Sequential()
 model:add(nn.View(28 * 28)) --reshapes the image into a vector without copy
@@ -121,7 +121,7 @@ for e = 1, epochs do
     trainLoss[e], trainError[e] = forwardNet(trainData, trainLabels, true)
     testLoss[e], testError[e], confusion = forwardNet(testData, testLabels, false)
     
-    if e % 5 == 0 then
+    if e % 2 == 0 then
         print('Epoch ' .. e .. ':')
         print('Training error: ' .. trainError[e], 'Training Loss: ' .. trainLoss[e])
         print('Test error: ' .. testError[e], 'Test Loss: ' .. testLoss[e])
