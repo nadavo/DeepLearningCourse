@@ -1,15 +1,4 @@
-function loadMyModel()
-    require 'nn'
-    require 'cunn'
-    local mnist = require 'mnist'
-    local optim = require 'optim'
-    local model = torch.load('MyModel')
-    local testData = mnist.testdataset().data:float();
-    testData:add(-mean):div(std);
-    local testLabels = mnist.testdataset().label:add(1);
-    local avgError = forwardNet(model,testData,testLabels)
-    return avgError
-end
+local M = {}
 
 local function forwardNet(model, data, labels)
     local confusion = optim.ConfusionMatrix(torch.range(0,9):totable())
@@ -28,3 +17,21 @@ local function forwardNet(model, data, labels)
     local avgError = 1 - confusion.totalValid
     return avgError
 end
+
+function M.loadMyModel()
+    require 'nn'
+    require 'cunn'
+    local mnist = require 'mnist'
+    local optim = require 'optim'
+    local testData = mnist.testdataset().data:float();
+    local trainData = mnist.traindataset().data:float();
+    local mean = trainData:mean()
+    local std = trainData:std()
+    testData:add(-mean):div(std);
+    local testLabels = mnist.testdataset().label:add(1);
+    local model = torch.load('MyModel.dat')
+    local avgError = forwardNet(model,testData,testLabels)
+    return avgError
+end
+
+return M
