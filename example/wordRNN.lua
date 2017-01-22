@@ -4,6 +4,7 @@ require 'optim'
 require 'eladtools'
 require 'recurrent'
 require 'utils.textDataProvider'
+require 'gnuplot'
 -------------------------------------------------------
 
 cmd = torch.CmdLine()
@@ -18,11 +19,11 @@ cmd:option('-shuffle',            false,                       'shuffle training
 
 cmd:text('===>Model And Training Regime')
 cmd:option('-model',              'LSTM',                      'Recurrent model [RNN, iRNN, LSTM, GRU]')
-cmd:option('-seqLength',          50,                          'number of timesteps to unroll for')
-cmd:option('-rnnSize',            128,                         'size of rnn hidden layer')
+cmd:option('-seqLength',          8,                         'number of timesteps to unroll for')
+cmd:option('-rnnSize',            212,                         'size of rnn hidden layer')
 cmd:option('-numLayers',          2,                           'number of layers in the LSTM')
-cmd:option('-dropout',            0.5,                           'dropout p value')
-cmd:option('-LR',                 2e-3,                        'learning rate')
+cmd:option('-dropout',            0.1,                           'dropout p value')
+cmd:option('-LR',                 25e-4,                        'learning rate')
 cmd:option('-LRDecay',            0,                           'learning rate decay (in # samples)')
 cmd:option('-weightDecay',        0,                           'L2 penalty on the weights')
 cmd:option('-momentum',           0,                           'momentum')
@@ -32,7 +33,7 @@ cmd:option('-initWeight',         0.08,                        'uniform weight i
 cmd:option('-earlyStop',          5,                           'number of bad epochs to stop after')
 cmd:option('-optimization',       'rmsprop',                   'optimization method')
 cmd:option('-gradClip',           5,                           'clip gradients at this value')
-cmd:option('-epoch',              100,                         'number of epochs to train')
+cmd:option('-epoch',              20,                         'number of epochs to train')
 cmd:option('-epochDecay',         5,                           'number of epochs to start decay learning rate')
 
 cmd:text('===>Platform Optimization')
@@ -90,7 +91,7 @@ else
     modelConfig.recurrent = nn.Sequential()
     for i=1, opt.numLayers do
       modelConfig.recurrent:add(rnn(hiddenSize, opt.rnnSize, opt.initWeight))
-     -- modelConfig.recurrent:add(nn.TemporalModule(nn.BatchNormalization(opt.rnnSize)))
+      --modelConfig.recurrent:add(nn.TemporalModule(nn.BatchNormalization(opt.rnnSize)))
       if opt.dropout > 0 then
         modelConfig.recurrent:add(nn.Dropout(opt.dropout))
       end
@@ -113,25 +114,30 @@ local log = optim.Logger(logFilename)
 local decreaseLR = EarlyStop(1,opt.epochDecay)
 local stopTraining = EarlyStop(opt.earlyStop, opt.epoch)
 local epoch = 1
+local trainPerplexity = torch.Tensor(20)
+local validationPerplexity = torch.Tensor(20)
+local testPerplexity = torch.Tensor(20)
 
 repeat
   print('\nEpoch ' .. epoch ..'\n')
   LossTrain = train(data.trainingData)
   saveModel(epoch)
   if opt.optState then
-    torch.save(optStateFilename .. '_epoch_' .. epoch .. '.t7', optimState)
+    torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
   end
-  print('\nTraining Perplexity: ' .. torch.exp(LossTrain))
+  
+  trainPerplexity[epoch] = torch.exp(LossTrain)
+  print('\nTraining Perplexity: ' .. trainPerplexity[epoch])
 
   local LossVal = evaluate(data.validationData)
-
-  print('\nValidation Perplexity: ' .. torch.exp(LossVal))
+  validationPerplexity[epoch] = torch.exp(LossVal)
+  print('\nValidation Perplexity: ' .. validationPerplexity[epoch])
 
   local LossTest = evaluate(data.testData)
+  testPerplexity[epoch] = torch.exp(LossTest)
+  print('\nSampled Text:\n' .. sample('Buy low, sell high is the', 8, true))
 
-  --print('\nSampled Text:\n' .. sample('the meaning of life is', 50, true))
-
-  print('\nTest Perplexity: ' .. torch.exp(LossTest))
+  print('\nTest Perplexity: ' .. testPerplexity[epoch])
   log:add{['Training Loss']= LossTrain, ['Validation Loss'] = LossVal, ['Test Loss'] = LossTest}
   log:style{['Training Loss'] = '-', ['Validation Loss'] = '-', ['Test Loss'] = '-'}
   log:plot()
@@ -149,3 +155,10 @@ until stopTraining:update(LossVal)
 local lowestLoss, bestIteration = stopTraining:lowest()
 
 print("Best Iteration was " .. bestIteration .. ", With a validation loss of: " .. lowestLoss)
+
+local range = torch.range(1, 20)
+gnuplot.pngfigure(optStateFilename .. '_epoch_' .. epoch .. '.png')
+gnuplot.plot({'trainPeplexity',trainPerplexity},{'validationPerplexity',validationPerplexity},{'testPerplexity',testPerplexity})
+gnuplot.xlabel('epochs')
+gnuplot.ylabel('Perplexity')
+gnuplot.plotflush()
