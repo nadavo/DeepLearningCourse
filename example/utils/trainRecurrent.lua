@@ -130,7 +130,7 @@ endWords:select(2,i):copy(wordVec:index(1, endIdxs))
 end
 
 local function saveModel(epoch)
-    local fn = netFilename .. '_' .. epoch .. '.t7'
+    local fn = netFilename .. '_' .. epoch .. '.dat'
     torch.save(fn,
     {
         embedder = savedModel.embedder:clone():float(),

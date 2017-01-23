@@ -21,7 +21,7 @@ cmd:option('-model',              'LSTM',                      'Recurrent model 
 cmd:option('-seqLength',          8,                         'number of timesteps to unroll for')
 cmd:option('-rnnSize',            212,                         'size of rnn hidden layer')
 cmd:option('-numLayers',          2,                           'number of layers in the LSTM')
-cmd:option('-dropout',            0.1,                           'dropout p value')
+cmd:option('-dropout',            0.25,                           'dropout p value')
 cmd:option('-LR',                 25e-4,                        'learning rate')
 cmd:option('-LRDecay',            0,                           'learning rate decay (in # samples)')
 cmd:option('-weightDecay',        0,                           'L2 penalty on the weights')
@@ -32,7 +32,7 @@ cmd:option('-initWeight',         0.08,                        'uniform weight i
 cmd:option('-earlyStop',          5,                           'number of bad epochs to stop after')
 cmd:option('-optimization',       'rmsprop',                   'optimization method')
 cmd:option('-gradClip',           5,                           'clip gradients at this value')
-cmd:option('-epoch',              5,                         'number of epochs to train')
+cmd:option('-epoch',              30,                         'number of epochs to train')
 cmd:option('-epochDecay',         5,                           'number of epochs to start decay learning rate')
 
 cmd:text('===>Platform Optimization')
@@ -122,9 +122,11 @@ local testPerplexity = torch.Tensor(numOfEpochs)
 repeat
   print('\nEpoch ' .. epoch ..'\n')
   LossTrain = train(data.trainingData)
-  saveModel(epoch)
-  if opt.optState then
-    torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
+  if (epoch%5==0) then
+  	saveModel(epoch)
+  	if opt.optState then
+    	  torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
+  	end
   end
 
   trainPerplexity[epoch] = torch.exp(LossTrain)
