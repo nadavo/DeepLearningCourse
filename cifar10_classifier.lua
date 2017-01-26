@@ -58,32 +58,62 @@ end
 
 local model = nn.Sequential()
 
-model:add(cudnn.SpatialConvolution(3,64,5,5,1,1,2,2))
-model:add(nn.SpatialBatchNormalization(64))
-model:add(cudnn.ReLU(true))
-model:add(cudnn.SpatialConvolution(64,32,5,5,1,1,2,2))
-model:add(nn.SpatialBatchNormalization(32))
-model:add(cudnn.ReLU(true))
-model:add(cudnn.SpatialConvolution(32,16,5,5,1,1,2,2))
-model:add(nn.SpatialBatchNormalization(16))
-model:add(cudnn.ReLU(true))
+local function Block(...)
+  local arg = {...}
+  model:add(nn.SpatialConvolution(...))
+  model:add(nn.SpatialBatchNormalization(arg[2],1e-3))
+  model:add(nn.ReLU(true))
+  return model
+end
 
-model:add(cudnn.SpatialMaxPooling(3,3,2,2))
-model:add(nn.Dropout(0.5))
-model:add(cudnn.ReLU(true))
+--model:add(nn.BatchFlip():float())
+Block(3,128,3,3,1,1,2,2)
+Block(128,64,1,1)
+Block(64,32,1,1)
+Block(32,16,1,1)
+model:add(nn.SpatialMaxPooling(3,3,2,2):ceil())
+model:add(nn.Dropout(0.25))
+Block(16,32,5,5,1,1,2,2)
+Block(32,64,1,1)
+--Block(64,32,1,1)
+--Block(192,192,1,1)
+model:add(nn.SpatialAveragePooling(3,3,2,2):ceil())
+model:add(nn.Dropout(0.25))
+----Block(32,32,3,3,1,1,1,1)
+Block(64,32,3,3,1,1,1,1)
+--Block(192,192,1,1)
+Block(32,10,1,1)
+model:add(nn.SpatialAveragePooling(8,8,1,1):ceil())
+model:add(nn.View(10))
+model:add(nn.LogSoftMax()) 
 
-model:add(cudnn.SpatialConvolution(16, 32, 3, 3))
-model:add(nn.SpatialBatchNormalization(32))
-model:add(cudnn.ReLU(true))
 
-model:add(cudnn.SpatialMaxPooling(2,2,2,2))
-model:add(nn.Dropout(0.5))
-model:add(cudnn.ReLU(true))
+--model:add(cudnn.SpatialConvolution(3,64,3,3,1,1,2,2))
+--model:add(nn.SpatialBatchNormalization(64,1e-3))
+--model:add(cudnn.ReLU(true))
 
-model:add(nn.View(32*4*4):setNumInputDims(3))
-model:add(nn.Linear(32*4*4, 256))
-model:add(cudnn.ReLU(true))
-model:add(nn.LogSoftMax())
+--model:add(cudnn.SpatialConvolution(64,32,3,3,1,1))
+--model:add(nn.SpatialBatchNormalization(32,1e-3))
+--model:add(cudnn.ReLU(true))
+
+--model:add(cudnn.SpatialConvolution(32,16,3,3,1,1))
+--model:add(nn.SpatialBatchNormalization(16,1e-3))
+--model:add(cudnn.ReLU(true))
+
+--model:add(cudnn.SpatialConvolution(16,32,3,3,1,1))
+--model:add(nn.SpatialBatchNormalization(32,1e-3))
+--model:add(cudnn.SpatialMaxPooling(3,3,2,2):ceil())
+--model:add(nn.Dropout(0.5))
+--model:add(cudnn.ReLU(true))
+
+--model:add(cudnn.SpatialConvolution(32, 10, 1, 1))
+--model:add(nn.SpatialBatchNormalization(10,1e-3))
+--model:add(cudnn.ReLU(true))
+
+--model:add(cudnn.SpatialAveragePooling(8,8,1,1):ceil())
+--model:add(nn.View(10))
+
+--model:add(nn.LogSoftMax())
 
 model:cuda()
 criterion = nn.ClassNLLCriterion():cuda()
@@ -175,7 +205,7 @@ timer = torch.Timer()
 print('after timer')
 
 for e = 1, epochs do
-    print ('b4 shuffle')
+    print ('before shuffle')
     trainData, trainLabels = shuffle(trainData, trainLabels) --shuffle training data
     print ('after shuffle')
     trainLoss[e], trainError[e] = forwardNet(trainData, trainLabels, true)
