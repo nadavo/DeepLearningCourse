@@ -44,7 +44,7 @@ cmd:option('-seed',               123,                         'torch manual ran
 cmd:option('-constBatchSize',     false,                       'do not allow varying batch sizes')
 
 cmd:text('===>Save/Load Options')
-cmd:option('-load',               '',                          'load existing net weights')
+cmd:option('-load',               'MyModel.dat',                          'load existing net weights')
 cmd:option('-save',               os.date():gsub(' ',''),      'save directory')
 cmd:option('-optState',           false,                       'Save optimization state every epoch')
 cmd:option('-checkpoint',         0,                           'Save a weight check point every n samples. 0 for off')
@@ -122,12 +122,12 @@ local testPerplexity = torch.Tensor(numOfEpochs)
 repeat
   print('\nEpoch ' .. epoch ..'\n')
   LossTrain = train(data.trainingData)
-  if (epoch%5==0) then
-  	saveModel(epoch)
-  	if opt.optState then
-    	  torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
-  	end
-  end
+  --if (epoch%10==0) then
+  --	saveModel(epoch)
+  --	if opt.optState then
+  --  	  torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
+  --	end
+  --end
 
   trainPerplexity[epoch] = torch.exp(LossTrain)
   print('\nTraining Perplexity: ' .. trainPerplexity[epoch])
@@ -157,6 +157,10 @@ until stopTraining:update(LossVal)
 local lowestLoss, bestIteration = stopTraining:lowest()
 
 print("Best Iteration was " .. bestIteration .. ", With a validation loss of: " .. lowestLoss)
+
+for i=1,5 do
+  print('\nSentence '..i..':' .. sample('Buy low, sell high is the', numOfWords, true))
+end
 
 require 'gnuplot'
 local range = torch.range(1, numOfEpochs)
