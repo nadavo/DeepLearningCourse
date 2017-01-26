@@ -6,6 +6,7 @@
 cifar10_classifier.lua - modified file from Tutorial 5 which builds the network and saves it to a file in your cwd called 'MyModel.dat'
 
 loadMyModel.lua - loads our trained network from 'MyModel.dat' file and returns the average error on cifar10-test set.
+
 usage: 
 ```
 th loadMyModel.lua
