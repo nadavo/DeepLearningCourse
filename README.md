@@ -5,12 +5,11 @@
 
 wordRNN_edited.lua - modified file from Elad Hoffer's implementation which builds the network and saves it to a file in your cwd called 'MyModel.dat'
 
-loadMyModel.lua - loads our saved network file and returns the test perplexity on the Penn Treebank test set and outputs 5 sentence completions -
+loadMyModel.lua - loads our saved network file and returns the test perplexity on the Penn Treebank test set and outputs 5 sentence completions
 usage: 
 ```
-th
-loader = require 'loadMyModel.lua'
-loader.loadMyModel()
+th wordRNN_edited.lua
+th loadMyModel.lua
 ```
 
 Report.PDF - Short report describing our work + graphs
