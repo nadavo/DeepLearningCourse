@@ -172,7 +172,7 @@ end
 --  ****************************************************************
 require 'optim'
 
-local batchSize = 128
+local batchSize = 16
 local optimState = {}
 
 function forwardNet(data,labels, train)
@@ -279,4 +279,4 @@ print(predicted:exp()) -- the output of the network is Log-Probabilities. To con
 
 print('saving the model as network.model')
 -- save the model
-torch.save('network.model', model)
+torch.save('network2.model', model)
