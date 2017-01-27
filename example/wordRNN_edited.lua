@@ -18,7 +18,7 @@ cmd:option('-shuffle',            false,                       'shuffle training
 
 cmd:text('===>Model And Training Regime')
 cmd:option('-model',              'LSTM',                      'Recurrent model [RNN, iRNN, LSTM, GRU]')
-cmd:option('-seqLength',          8,                         'number of timesteps to unroll for')
+cmd:option('-seqLength',          10,                         'number of timesteps to unroll for')
 cmd:option('-rnnSize',            212,                         'size of rnn hidden layer')
 cmd:option('-numLayers',          2,                           'number of layers in the LSTM')
 cmd:option('-dropout',            0.25,                           'dropout p value')
@@ -46,7 +46,7 @@ cmd:option('-constBatchSize',     false,                       'do not allow var
 cmd:text('===>Save/Load Options')
 cmd:option('-load',               '',                          'load existing net weights')
 cmd:option('-save',               os.date():gsub(' ',''),      'save directory')
-cmd:option('-optState',           false,                       'Save optimization state every epoch')
+cmd:option('-optState',           true,                       'Save optimization state every epoch')
 cmd:option('-checkpoint',         0,                           'Save a weight check point every n samples. 0 for off')
 
 
@@ -109,7 +109,7 @@ local evaluate = trainingConfig.evaluate
 local sample = trainingConfig.sample
 local optimState = trainingConfig.optimState
 local saveModel = trainingConfig.saveModel
-
+local optStateFilename = paths.concat(opt.save,'NetOptState')
 local logFilename = paths.concat(opt.save,'LossRate.log')
 local log = optim.Logger(logFilename)
 local decreaseLR = EarlyStop(1,opt.epochDecay)
@@ -122,7 +122,7 @@ local testPerplexity = torch.Tensor(numOfEpochs)
 repeat
   print('\nEpoch ' .. epoch ..'\n')
   LossTrain = train(data.trainingData)
-  if (epoch%5==0) then
+  if (epoch%10==0) then
   	saveModel(epoch)
   	if opt.optState then
     	  torch.save(optStateFilename .. '_epoch_' .. epoch .. '.dat', optimState)
@@ -157,6 +157,10 @@ until stopTraining:update(LossVal)
 local lowestLoss, bestIteration = stopTraining:lowest()
 
 print("Best Iteration was " .. bestIteration .. ", With a validation loss of: " .. lowestLoss)
+
+for i=1,5 do
+  print('\nSentence '..i..':' .. sample('Buy low, sell high is the', numOfWords, true))
+end
 
 require 'gnuplot'
 local range = torch.range(1, numOfEpochs)

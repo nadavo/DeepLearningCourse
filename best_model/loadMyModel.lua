@@ -80,6 +80,16 @@ local vocabSize = #decoder
 ----------------------------------------------------------------------
 
 modelConfig = torch.load('MyModel.dat')
+local embedder = modelConfig.embedder
+local classifier = modelConfig.classifier
+local recurrent = modelConfig.recurrent
+
+local model =  nn.Sequential()
+model:add(embedder)
+model:add(recurrent)
+model:add(nn.TemporalModule(classifier))
+print (model)
+
 modelConfig.classifier:share(modelConfig.embedder, 'weight', 'gradWeight')
 
 tester = require 'utils.trainRecurrent'
@@ -89,7 +99,7 @@ local sample = tester.sample
 local testPerplexity = torch.Tensor(5)
 
 for i=1,5 do
-  local LossTest = evaluate(data.testData)
+  local LossTest = evaluate(data.trainData)
   testPerplexity[i] = torch.exp(LossTest)
   print('\nSampled Text:\n' .. sample('Buy low, sell high is the', opt.seqLength, true))
 

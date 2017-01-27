@@ -252,7 +252,6 @@ local function sample(str, num, space, temperature)
             pred = sampleModel:forward(encoded:narrow(1,i,1))
         end
         wordNum = smp(pred)
-
         predText = str .. '... ' .. decoder[wordNum:squeeze()]
     else
         wordNum = torch.Tensor(1):random(vocabSize):type(TensorType)

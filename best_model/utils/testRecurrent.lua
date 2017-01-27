@@ -1,3 +1,7 @@
+require 'optim'
+require 'nn'
+require 'recurrent'
+
 function loadTextFileWords(filename, vocab)
 
     local file = io.open(filename, 'r')
@@ -80,15 +84,15 @@ end
     return func
 end
 
-local function ForwardSeq(dataVec, seqLength, batchSize)
+local function ForwardSeq(model, dataVec, seqLength, batchSize)
 
     local data, labels = reshapeData(dataVec, seqLength, batchSize)
     local sizeData = data:size(1)
     local numSamples = 0
     local lossVal = 0
     local currLoss = 0
-    local x = torch.Tensor( batchSize, seqLength):type(TensorType)
-    local yt = torch.Tensor( batchSize, seqLength):type(TensorType)
+    local x = torch.Tensor(batchSize, seqLength):type(TensorType)
+    local yt = torch.Tensor(batchSize, seqLength):type(TensorType)
 
     -- input is a sequence
     model:sequence()
@@ -116,12 +120,12 @@ local function ForwardSeq(dataVec, seqLength, batchSize)
 end
 
 
-function evaluate(dataVec,seqLength,batchSize)
+local function evaluate(model,dataVec,seqLength,batchSize)
     model:evaluate()
-    return ForwardSeq(dataVec,seqLength,batchSize)
+    return ForwardSeq(model, dataVec,seqLength,batchSize)
 end
 
-function sample(str, num, space, temperature)
+local function sample(str, num, space, temperature)
     local num = num or 50
     local temperature = temperature or 1
     local function smp(preds)
@@ -168,3 +172,10 @@ function sample(str, num, space, temperature)
     end
     return predText
 end
+
+return 
+{
+	loadTextFileWords = loadTextFileWords,
+	evaluate = evaluate,
+	sample = sample
+}
