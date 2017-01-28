@@ -21,7 +21,7 @@ cmd:option('-model',              'LSTM',                      'Recurrent model 
 cmd:option('-seqLength',          10,                         'number of timesteps to unroll for')
 cmd:option('-rnnSize',            212,                         'size of rnn hidden layer')
 cmd:option('-numLayers',          2,                           'number of layers in the LSTM')
-cmd:option('-dropout',            0.25,                           'dropout p value')
+cmd:option('-dropout',            0.33,                           'dropout p value')
 cmd:option('-LR',                 25e-4,                        'learning rate')
 cmd:option('-LRDecay',            0,                           'learning rate decay (in # samples)')
 cmd:option('-weightDecay',        0,                           'L2 penalty on the weights')
@@ -165,7 +165,7 @@ end
 require 'gnuplot'
 local range = torch.range(1, numOfEpochs)
 gnuplot.pngfigure(paths.concat(opt.save,'PerplexityGraph.png'))
-gnuplot.plot({'trainPeplexity',trainPerplexity},{'validationPerplexity',validationPerplexity},{'testPerplexity',testPerplexity})
+gnuplot.plot({'trainPeplexity',trainPerplexity},{'testPerplexity',testPerplexity})
 gnuplot.xlabel('epochs')
 gnuplot.ylabel('Perplexity')
 gnuplot.plotflush()
