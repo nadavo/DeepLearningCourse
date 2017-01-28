@@ -1,0 +1,465 @@
+2017-01-26 02:42:27 [program started on Thu Jan 26 02:42:27 2017] 
+2017-01-26 02:42:27 [command line arguments] 
+2017-01-26 02:42:27 seed 123 
+2017-01-26 02:42:27 earlyStop 5 
+2017-01-26 02:42:27 initWeight 0.08 
+2017-01-26 02:42:27 LRDecay 0 
+2017-01-26 02:42:27 batchSize 50 
+2017-01-26 02:42:27 numLayers 2 
+2017-01-26 02:42:27 decayRate 2 
+2017-01-26 02:42:27 model LSTM 
+2017-01-26 02:42:27 constBatchSize false 
+2017-01-26 02:42:27 gradClip 5 
+2017-01-26 02:42:27 LR 0.0033 
+2017-01-26 02:42:27 seqLength 8 
+2017-01-26 02:42:27 load  
+2017-01-26 02:42:27 nGPU 1 
+2017-01-26 02:42:27 epochDecay 5 
+2017-01-26 02:42:27 devid 1 
+2017-01-26 02:42:27 save /home/nadavo@st.technion.ac.il/git-repo/example/Results/ThuJan2602:42:262017 
+2017-01-26 02:42:27 checkpoint 0 
+2017-01-26 02:42:27 type cuda 
+2017-01-26 02:42:27 momentum 0 
+2017-01-26 02:42:27 rnnSize 212 
+2017-01-26 02:42:27 weightDecay 0 
+2017-01-26 02:42:27 threads 8 
+2017-01-26 02:42:27 optimization rmsprop 
+2017-01-26 02:42:27 dropout 0.33 
+2017-01-26 02:42:27 shuffle true 
+2017-01-26 02:42:27 optState true 
+2017-01-26 02:42:27 epoch 30 
+2017-01-26 02:42:27 [----------------------] 
+2017-01-26 02:42:30 
+==> Network 
+2017-01-26 02:42:30 nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> output]
+  (1): nn.LookupTable
+  (2): nn.Sequential {
+    [input -> (1) -> (2) -> (3) -> (4) -> output]
+    (1): nn.LSTM(212 -> 212, 424)
+    (2): nn.Dropout(0.330000)
+    (3): nn.LSTM(212 -> 212, 424)
+    (4): nn.Dropout(0.330000)
+  }
+  (3): nn.TemporalModule {
+    [input -> (1) -> output]
+    (1): nn.Linear(212 -> 10000)
+  }
+} 
+2017-01-26 02:42:30 
+==>2850800 Parameters 
+2017-01-26 02:42:30 
+==> Criterion 
+2017-01-26 02:42:30 nn.CrossEntropyCriterion 
+2017-01-26 02:42:31 
+Epoch 1
+ 
+2017-01-26 02:44:21 
+Training Perplexity: 327.68450927734 
+2017-01-26 02:44:23 
+Validation Perplexity: 226.8111114502 
+2017-01-26 02:44:26 
+Sampled Text:
+Buy low, sell high is the... walter <unk> of these and of <unk> our waste 
+2017-01-26 02:44:26 
+Test Perplexity: 210.71194458008 
+2017-01-26 02:44:27 
+Epoch 2
+ 
+2017-01-26 02:46:17 
+Training Perplexity: 219.51391601562 
+2017-01-26 02:46:20 
+Validation Perplexity: 196.2642364502 
+2017-01-26 02:46:23 
+Sampled Text:
+Buy low, sell high is the... rate from in the decade began into dow jones 
+2017-01-26 02:46:23 
+Test Perplexity: 182.0795135498 
+2017-01-26 02:46:28 
+Epoch 3
+ 
+2017-01-26 02:48:17 
+Training Perplexity: 195.67672729492 
+2017-01-26 02:48:20 
+Validation Perplexity: 184.71690368652 
+2017-01-26 02:48:23 
+Sampled Text:
+Buy low, sell high is the... too <unk> i attorneys can do and we like 
+2017-01-26 02:48:23 
+Test Perplexity: 169.61029052734 
+2017-01-26 02:48:23 
+Epoch 4
+ 
+2017-01-26 02:50:12 
+Training Perplexity: 182.79206848145 
+2017-01-26 02:50:15 
+Validation Perplexity: 178.01309204102 
+2017-01-26 02:50:18 
+Sampled Text:
+Buy low, sell high is the... 
+ then all it might be disclosed 
+ it 
+2017-01-26 02:50:18 
+Test Perplexity: 162.46795654297 
+2017-01-26 02:50:18 
+Epoch 5
+ 
+2017-01-26 02:52:08 
+Training Perplexity: 174.22747802734 
+2017-01-26 02:52:11 
+Validation Perplexity: 174.16749572754 
+2017-01-26 02:52:14 
+Sampled Text:
+Buy low, sell high is the... same <unk> traffic increases 
+ they are a way 
+2017-01-26 02:52:14 
+Test Perplexity: 158.37878417969 
+2017-01-26 02:52:14 Learning Rate decreased to: 0.00165 
+2017-01-26 02:52:14 
+Epoch 6
+ 
+2017-01-26 02:54:04 
+Training Perplexity: 158.10134887695 
+2017-01-26 02:54:06 
+Validation Perplexity: 163.81851196289 
+2017-01-26 02:54:09 
+Sampled Text:
+Buy low, sell high is the... virtue of societe treasurys 's volatility 
+ treasury 's 
+2017-01-26 02:54:09 
+Test Perplexity: 148.84788513184 
+2017-01-26 02:54:10 Learning Rate decreased to: 0.000825 
+2017-01-26 02:54:10 
+Epoch 7
+ 
+2017-01-26 02:55:59 
+Training Perplexity: 147.75308227539 
+2017-01-26 02:56:02 
+Validation Perplexity: 158.51463317871 
+2017-01-26 02:56:05 
+Sampled Text:
+Buy low, sell high is the... small volatility they refuses to maintain or health addressed 
+2017-01-26 02:56:05 
+Test Perplexity: 145.00358581543 
+2017-01-26 02:56:05 Learning Rate decreased to: 0.0004125 
+2017-01-26 02:56:05 
+Epoch 8
+ 
+2017-01-26 02:57:55 
+Training Perplexity: 142.53057861328 
+2017-01-26 02:57:57 
+Validation Perplexity: 155.69111633301 
+2017-01-26 02:58:00 
+Sampled Text:
+Buy low, sell high is the... united stretch of america 's promotional industry where sales 
+2017-01-26 02:58:00 
+Test Perplexity: 142.5210723877 
+2017-01-26 02:58:01 Learning Rate decreased to: 0.00020625 
+2017-01-26 02:58:01 
+Epoch 9
+ 
+2017-01-26 02:59:50 
+Training Perplexity: 140.23329162598 
+2017-01-26 02:59:53 
+Validation Perplexity: 154.25221252441 
+2017-01-26 02:59:56 
+Sampled Text:
+Buy low, sell high is the... prove of the most scheduled tax traders will charity 
+2017-01-26 02:59:56 
+Test Perplexity: 141.36968994141 
+2017-01-26 02:59:56 Learning Rate decreased to: 0.000103125 
+2017-01-26 02:59:56 
+Epoch 10
+ 
+2017-01-26 03:01:49 
+Training Perplexity: 138.98516845703 
+2017-01-26 03:01:51 
+Validation Perplexity: 153.41905212402 
+2017-01-26 03:01:54 
+Sampled Text:
+Buy low, sell high is the... companies will be not a problem for <unk> white 
+2017-01-26 03:01:54 
+Test Perplexity: 140.78120422363 
+2017-01-26 03:01:55 Learning Rate decreased to: 5.15625e-05 
+2017-01-26 03:01:55 
+Epoch 11
+ 
+2017-01-26 03:03:44 
+Training Perplexity: 138.35520935059 
+2017-01-26 03:03:47 
+Validation Perplexity: 153.10786437988 
+2017-01-26 03:03:50 
+Sampled Text:
+Buy low, sell high is the... highest public political market says bernard <unk> president of 
+2017-01-26 03:03:50 
+Test Perplexity: 140.59846496582 
+2017-01-26 03:03:50 Learning Rate decreased to: 2.578125e-05 
+2017-01-26 03:03:50 
+Epoch 12
+ 
+2017-01-26 03:05:40 
+Training Perplexity: 138.0609588623 
+2017-01-26 03:05:42 
+Validation Perplexity: 153.00408935547 
+2017-01-26 03:05:45 
+Sampled Text:
+Buy low, sell high is the... gas money market as raw <unk> times 
+ analysts 
+2017-01-26 03:05:45 
+Test Perplexity: 140.53271484375 
+2017-01-26 03:05:45 Learning Rate decreased to: 1.2890625e-05 
+2017-01-26 03:05:45 
+Epoch 13
+ 
+2017-01-26 03:07:36 
+Training Perplexity: 137.69041442871 
+2017-01-26 03:07:39 
+Validation Perplexity: 152.98934936523 
+2017-01-26 03:07:42 
+Sampled Text:
+Buy low, sell high is the... risk of economic problems can have been into critics 
+2017-01-26 03:07:42 
+Test Perplexity: 140.50337219238 
+2017-01-26 03:07:42 Learning Rate decreased to: 6.4453125e-06 
+2017-01-26 03:07:42 
+Epoch 14
+ 
+2017-01-26 03:09:32 
+Training Perplexity: 137.75588989258 
+2017-01-26 03:09:34 
+Validation Perplexity: 152.96717834473 
+2017-01-26 03:09:37 
+Sampled Text:
+Buy low, sell high is the... leading metropolitan funds and the problem western chemical and 
+2017-01-26 03:09:37 
+Test Perplexity: 140.4903717041 
+2017-01-26 03:09:38 Learning Rate decreased to: 3.22265625e-06 
+2017-01-26 03:09:38 
+Epoch 15
+ 
+2017-01-26 03:11:27 
+Training Perplexity: 137.77047729492 
+2017-01-26 03:11:30 
+Validation Perplexity: 152.96287536621 
+2017-01-26 03:11:33 
+Sampled Text:
+Buy low, sell high is the... step dated from N almost a bushel or a 
+2017-01-26 03:11:33 
+Test Perplexity: 140.48622131348 
+2017-01-26 03:11:33 Learning Rate decreased to: 1.611328125e-06 
+2017-01-26 03:11:33 
+Epoch 16
+ 
+2017-01-26 03:14:15 
+Training Perplexity: 137.70965576172 
+2017-01-26 03:14:19 
+Validation Perplexity: 152.96017456055 
+2017-01-26 03:14:24 
+Sampled Text:
+Buy low, sell high is the... highest on competing <unk> by interesting point 
+ bidder 
+2017-01-26 03:14:24 
+Test Perplexity: 140.48533630371 
+2017-01-26 03:14:24 Learning Rate decreased to: 8.056640625e-07 
+2017-01-26 03:14:24 
+Epoch 17
+ 
+2017-01-26 03:17:16 
+Training Perplexity: 137.38998413086 
+2017-01-26 03:17:20 
+Validation Perplexity: 152.96272277832 
+2017-01-26 03:17:25 
+Sampled Text:
+Buy low, sell high is the... opportunity to <unk> downward yields ahead 
+ it fails 
+2017-01-26 03:17:25 
+Test Perplexity: 140.48735046387 
+2017-01-26 03:17:25 Learning Rate decreased to: 4.0283203125e-07 
+2017-01-26 03:17:25 
+Epoch 18
+ 
+2017-01-26 03:20:17 
+Training Perplexity: 137.52264404297 
+2017-01-26 03:20:21 
+Validation Perplexity: 152.96170043945 
+2017-01-26 03:20:25 
+Sampled Text:
+Buy low, sell high is the... indian way his view of <unk> treaty in the 
+2017-01-26 03:20:25 
+Test Perplexity: 140.48655700684 
+2017-01-26 03:20:26 Learning Rate decreased to: 2.01416015625e-07 
+2017-01-26 03:20:26 
+Epoch 19
+ 
+2017-01-26 03:23:18 
+Training Perplexity: 137.36338806152 
+2017-01-26 03:23:22 
+Validation Perplexity: 152.96075439453 
+2017-01-26 03:23:26 
+Sampled Text:
+Buy low, sell high is the... entire amount of land storage and entertainment now 
+ 
+2017-01-26 03:23:26 
+Test Perplexity: 140.48561096191 
+2017-01-26 03:23:27 Learning Rate decreased to: 1.007080078125e-07 
+2017-01-26 03:23:27 
+Epoch 20
+ 
+2017-01-26 03:26:20 
+Training Perplexity: 137.51870727539 
+2017-01-26 03:26:24 
+Validation Perplexity: 152.95980834961 
+2017-01-26 03:26:28 
+Sampled Text:
+Buy low, sell high is the... key <unk> 
+ but those who have sought the 
+2017-01-26 03:26:28 
+Test Perplexity: 140.48474121094 
+2017-01-26 03:26:28 Learning Rate decreased to: 5.035400390625e-08 
+2017-01-26 03:26:28 
+Epoch 21
+ 
+2017-01-26 03:29:20 
+Training Perplexity: 137.56625366211 
+2017-01-26 03:29:24 
+Validation Perplexity: 152.95893859863 
+2017-01-26 03:29:29 
+Sampled Text:
+Buy low, sell high is the... active value of the agency 's profits 
+ what 
+2017-01-26 03:29:29 
+Test Perplexity: 140.48400878906 
+2017-01-26 03:29:29 Learning Rate decreased to: 2.5177001953125e-08 
+2017-01-26 03:29:29 
+Epoch 22
+ 
+2017-01-26 03:32:20 
+Training Perplexity: 137.59498596191 
+2017-01-26 03:32:25 
+Validation Perplexity: 152.9584197998 
+2017-01-26 03:32:29 
+Sampled Text:
+Buy low, sell high is the... reasons 
+ the <unk> southern weather owns released to 
+2017-01-26 03:32:29 
+Test Perplexity: 140.4835357666 
+2017-01-26 03:32:29 Learning Rate decreased to: 1.2588500976562e-08 
+2017-01-26 03:32:29 
+Epoch 23
+ 
+2017-01-26 03:35:21 
+Training Perplexity: 137.59130859375 
+2017-01-26 03:35:25 
+Validation Perplexity: 152.95820617676 
+2017-01-26 03:35:30 
+Sampled Text:
+Buy low, sell high is the... <unk> how <unk> 's corp. is in the securities 
+2017-01-26 03:35:30 
+Test Perplexity: 140.48333740234 
+2017-01-26 03:35:30 Learning Rate decreased to: 6.2942504882812e-09 
+2017-01-26 03:35:30 
+Epoch 24
+ 
+2017-01-26 03:38:22 
+Training Perplexity: 137.61172485352 
+2017-01-26 03:38:26 
+Validation Perplexity: 152.95805358887 
+2017-01-26 03:38:31 
+Sampled Text:
+Buy low, sell high is the... u.k. western deficit to N N and long-term orders 
+2017-01-26 03:38:31 
+Test Perplexity: 140.48320007324 
+2017-01-26 03:38:31 Learning Rate decreased to: 3.1471252441406e-09 
+2017-01-26 03:38:31 
+Epoch 25
+ 
+2017-01-26 03:41:21 
+Training Perplexity: 137.50421142578 
+2017-01-26 03:41:25 
+Validation Perplexity: 152.95799255371 
+2017-01-26 03:41:29 
+Sampled Text:
+Buy low, sell high is the... impact for the earnings daily at N <unk> 's 
+2017-01-26 03:41:29 
+Test Perplexity: 140.48313903809 
+2017-01-26 03:41:30 Learning Rate decreased to: 1.5735626220703e-09 
+2017-01-26 03:41:30 
+Epoch 26
+ 
+2017-01-26 03:44:21 
+Training Perplexity: 137.47871398926 
+2017-01-26 03:44:25 
+Validation Perplexity: 152.95791625977 
+2017-01-26 03:44:30 
+Sampled Text:
+Buy low, sell high is the... greatest economic growth of u.s.a stocks ridiculous rival <unk> 
+2017-01-26 03:44:30 
+Test Perplexity: 140.48313903809 
+2017-01-26 03:44:30 Learning Rate decreased to: 7.8678131103516e-10 
+2017-01-26 03:44:30 
+Epoch 27
+ 
+2017-01-26 03:47:22 
+Training Perplexity: 137.57012939453 
+2017-01-26 03:47:26 
+Validation Perplexity: 152.95791625977 
+2017-01-26 03:47:31 
+Sampled Text:
+Buy low, sell high is the... <unk> of the economy set up the <unk> still 
+2017-01-26 03:47:31 
+Test Perplexity: 140.48306274414 
+2017-01-26 03:47:31 Learning Rate decreased to: 3.9339065551758e-10 
+2017-01-26 03:47:31 
+Epoch 28
+ 
+2017-01-26 03:50:22 
+Training Perplexity: 137.52467346191 
+2017-01-26 03:50:26 
+Validation Perplexity: 152.95791625977 
+2017-01-26 03:50:31 
+Sampled Text:
+Buy low, sell high is the... fine corp. of $ N million in N 
+ 
+2017-01-26 03:50:31 
+Test Perplexity: 140.48306274414 
+2017-01-26 03:50:31 Learning Rate decreased to: 1.9669532775879e-10 
+2017-01-26 03:50:31 
+Epoch 29
+ 
+2017-01-26 03:53:23 
+Training Perplexity: 137.46783447266 
+2017-01-26 03:53:27 
+Validation Perplexity: 152.95791625977 
+2017-01-26 03:53:32 
+Sampled Text:
+Buy low, sell high is the... world 's assets to end only $ N a 
+2017-01-26 03:53:32 
+Test Perplexity: 140.48306274414 
+2017-01-26 03:53:32 Learning Rate decreased to: 9.8347663879395e-11 
+2017-01-26 03:53:32 
+Epoch 30
+ 
+2017-01-26 03:56:25 
+Training Perplexity: 137.62294006348 
+2017-01-26 03:56:29 
+Validation Perplexity: 152.95791625977 
+2017-01-26 03:56:34 
+Sampled Text:
+Buy low, sell high is the... government 's N fall up 
+ it is this 
+2017-01-26 03:56:34 
+Test Perplexity: 140.48306274414 
+2017-01-26 03:56:34 Learning Rate decreased to: 4.9173831939697e-11 
+2017-01-26 03:56:34 Best Iteration was 29, With a validation loss of: 5.0301629797272 
+2017-01-26 03:56:34 
+Sentence 1:Buy low, sell high is the... <unk> of the notion that it would be a 
+2017-01-26 03:56:34 
+Sentence 2:Buy low, sell high is the... first in one of the markets or so the 
+2017-01-26 03:56:34 
+Sentence 3:Buy low, sell high is the... $ N million last year the company reported a 
+2017-01-26 03:56:34 
+Sentence 4:Buy low, sell high is the... second issues in brazil 
+ wave of lower core 
+2017-01-26 03:56:34 
+Sentence 5:Buy low, sell high is the... two <unk> others at the time hit 
+ slide 
