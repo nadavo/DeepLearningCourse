@@ -1,0 +1,14 @@
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/EarlyStop.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/GlobalDominantPooling.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/NetConversion.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/ODCT.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/Optimizer.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/RecurrentLayer.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/SSU.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/SelectPoint.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/SpatialBottleNeck.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/SpatialConvolutionDCT.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/SpatialNMS.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/init.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/testSwallowBN.lua
+/home/nadavo@st.technion.ac.il/torch/install/lib/luarocks/rocks/eladtools/scm-1/lua/eladtools/utils.lua
