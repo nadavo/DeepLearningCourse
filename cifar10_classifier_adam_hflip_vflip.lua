@@ -69,14 +69,14 @@ local BatchFlip,parent = torch.class('nn.BatchFlip', 'nn.Module')
 			-- hflip
 			image.hflip(input[i]:float(), input[i]:float())
 			end
-			if permutation[i] % 6 == 1 then
+			--if permutation[i] % 6 == 1 then
 			-- rotate
 			--local deg = torch.uniform()*180
 			--image.rotate(input[i]:float(), input[i]:float(), (torch.uniform() - 0.5) * deg * math.pi / 180, 'bilinear')
-			end
-			if permutation[i] % 6 == 2 then
+			--end
+			if permutation[i] % 4 == 1 then
 			-- vflip
-			--image.vflip(input[i]:float(), input[i]:float())
+			image.vflip(input[i]:float(), input[i]:float())
 			end
 		end
 		end
@@ -94,8 +94,6 @@ end
 
 local model = nn.Sequential()
 
-model:add(nn.BatchFlip())
-
 local function Block(...)
   local arg = {...}
   model:add(nn.SpatialConvolution(...))
@@ -104,7 +102,7 @@ local function Block(...)
   return model
 end
 
---model:add(nn.BatchFlip():float())
+model:add(nn.BatchFlip():float())
 Block(3,128,5,5,1,1,2,2)
 Block(128,64,1,1)
 Block(64,32,1,1)
@@ -113,46 +111,15 @@ model:add(nn.SpatialMaxPooling(3,3,2,2):ceil())
 model:add(nn.Dropout(0.1))
 Block(16,32,3,3,1,1,1,1)
 Block(32,64,3,3,1,1,1,1)
---Block(64,32,1,1)
---Block(192,192,1,1)
 model:add(nn.SpatialAveragePooling(3,3,2,2):ceil())
 model:add(nn.Dropout(0.1))
-----Block(32,32,3,3,1,1,1,1)
 Block(64,32,1,1)
 Block(32,16,1,1)
---Block(192,192,1,1)
 Block(16,10,1,1)
 model:add(nn.SpatialAveragePooling(8,8,1,1):ceil())
 model:add(nn.View(10))
 model:add(nn.LogSoftMax()) 
 
-
---model:add(cudnn.SpatialConvolution(3,64,3,3,1,1,2,2))
---model:add(nn.SpatialBatchNormalization(64,1e-3))
---model:add(cudnn.ReLU(true))
-
---model:add(cudnn.SpatialConvolution(64,32,3,3,1,1))
---model:add(nn.SpatialBatchNormalization(32,1e-3))
---model:add(cudnn.ReLU(true))
-
---model:add(cudnn.SpatialConvolution(32,16,3,3,1,1))
---model:add(nn.SpatialBatchNormalization(16,1e-3))
---model:add(cudnn.ReLU(true))
-
---model:add(cudnn.SpatialConvolution(16,32,3,3,1,1))
---model:add(nn.SpatialBatchNormalization(32,1e-3))
---model:add(cudnn.SpatialMaxPooling(3,3,2,2):ceil())
---model:add(nn.Dropout(0.5))
---model:add(cudnn.ReLU(true))
-
---model:add(cudnn.SpatialConvolution(32, 10, 1, 1))
---model:add(nn.SpatialBatchNormalization(10,1e-3))
---model:add(cudnn.ReLU(true))
-
---model:add(cudnn.SpatialAveragePooling(8,8,1,1):ceil())
---model:add(nn.View(10))
-
---model:add(nn.LogSoftMax())
 
 model:cuda()
 criterion = nn.ClassNLLCriterion():cuda()
@@ -270,9 +237,6 @@ for e = 1, epochs do
     end
 end
 
-plotError(trainError, testError, 'Classification Error')
-plotLoss(trainLoss, testLoss, 'Classification Loss')
-
 --  ****************************************************************
 --  Network predictions
 --  ****************************************************************
@@ -290,3 +254,6 @@ print(predicted:exp()) -- the output of the network is Log-Probabilities. To con
 print('saving the model as network.model')
 -- save the model
 torch.save('network.model', model)
+
+plotError(trainError, testError, 'Classification Error')
+plotLoss(trainLoss, testLoss, 'Classification Loss')
