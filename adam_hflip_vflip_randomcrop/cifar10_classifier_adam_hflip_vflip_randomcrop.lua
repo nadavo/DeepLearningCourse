@@ -52,6 +52,24 @@ for i=1,3 do -- over each image channel
 end
 
 -- data augmentation module
+
+local function randomcrop(im , pad, randomcrop_type)
+	if randomcrop_type == 'reflection' then
+	-- Each feature map of a given input is padded with the replication of the input boundary
+		module = nn.SpatialReflectionPadding(pad,pad,pad,pad):float() 
+	elseif randomcrop_type == 'zero' then
+	-- Each feature map of a given input is padded with specified number of zeros.
+	-- If padding values are negative, then input is cropped.
+		module = nn.SpatialZeroPadding(pad,pad,pad,pad):float()
+	end
+
+	local padded = module:forward(im:float())
+	local x = torch.random(1,pad*2 + 1)
+	local y = torch.random(1,pad*2 + 1)
+	image.save('img2ZeroPadded.jpg', padded)
+	return padded:narrow(3,x,im:size(3)):narrow(2,y,im:size(2))
+end
+
 do
 local BatchFlip,parent = torch.class('nn.BatchFlip', 'nn.Module')
 
@@ -62,20 +80,24 @@ local BatchFlip,parent = torch.class('nn.BatchFlip', 'nn.Module')
 
 	function BatchFlip:updateOutput(input)
 	if self.train then
-			local permutation = torch.randperm(input:size(1))
+		local permutation = torch.randperm(input:size(1))
 		for i=1,input:size(1) do
 			if permutation[i] % 4 == 0 then
 			-- hflip
-			image.hflip(input[i]:float(), input[i]:float())
+				image.hflip(input[i]:float(), input[i]:float())
 			end
 			if permutation[i] % 4 == 1 then
 			-- vflip
-			--image.vflip(input[i]:float(), input[i]:float())
+				image.vflip(input[i]:float(), input[i]:float())
+			end
+			if permutation[i] % 4 == 2 then
+			-- random crop
+				randomcrop(input[i], 10, 'reflection')
 			end
 		end
-		end
+	end
 		--self.output:set(input)
-		self.output:set(input:cuda())
+	self.output:set(input:cuda())
 	return self.output
 	end
 end
@@ -166,7 +188,7 @@ function forwardNet(data,labels, train)
                 return err, dE_dw
             end
 
-            optim.sgd(feval, w, optimState)
+            optim.adam(feval, w, optimState)
         end
     end
 

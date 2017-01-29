@@ -3,6 +3,7 @@ require 'image'
 require 'nn'
 require 'cunn'
 require 'cudnn'
+--require './dataAugmentation.lua'
 
 function saveTensorAsGrid(tensor,fileName)
 	local padding = 1
@@ -68,9 +69,14 @@ local BatchFlip,parent = torch.class('nn.BatchFlip', 'nn.Module')
 			-- hflip
 			image.hflip(input[i]:float(), input[i]:float())
 			end
+			--if permutation[i] % 6 == 1 then
+			-- rotate
+			--local deg = torch.uniform()*180
+			--image.rotate(input[i]:float(), input[i]:float(), (torch.uniform() - 0.5) * deg * math.pi / 180, 'bilinear')
+			--end
 			if permutation[i] % 4 == 1 then
 			-- vflip
-			--image.vflip(input[i]:float(), input[i]:float())
+			image.vflip(input[i]:float(), input[i]:float())
 			end
 		end
 		end
@@ -166,7 +172,7 @@ function forwardNet(data,labels, train)
                 return err, dE_dw
             end
 
-            optim.sgd(feval, w, optimState)
+            optim.adam(feval, w, optimState)
         end
     end
 
@@ -199,7 +205,7 @@ end
 
 ---------------------------------------------------------------------
 print("epoch time")
-epochs = 300
+epochs = 300 --50
 trainLoss = torch.Tensor(epochs)
 testLoss = torch.Tensor(epochs)
 trainError = torch.Tensor(epochs)

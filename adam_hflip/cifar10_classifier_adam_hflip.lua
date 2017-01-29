@@ -114,7 +114,6 @@ model:add(nn.SpatialAveragePooling(8,8,1,1):ceil())
 model:add(nn.View(10))
 model:add(nn.LogSoftMax()) 
 
-
 model:cuda()
 criterion = nn.ClassNLLCriterion():cuda()
 
@@ -166,7 +165,7 @@ function forwardNet(data,labels, train)
                 return err, dE_dw
             end
 
-            optim.sgd(feval, w, optimState)
+            optim.adam(feval, w, optimState)
         end
     end
 
@@ -231,6 +230,9 @@ for e = 1, epochs do
     end
 end
 
+plotError(trainError, testError, 'Classification Error')
+plotLoss(trainLoss, testLoss, 'Classification Loss')
+
 --  ****************************************************************
 --  Network predictions
 --  ****************************************************************
@@ -248,6 +250,3 @@ print(predicted:exp()) -- the output of the network is Log-Probabilities. To con
 print('saving the model as network.model')
 -- save the model
 torch.save('network.model', model)
-
-plotError(trainError, testError, 'Classification Error')
-plotLoss(trainLoss, testLoss, 'Classification Loss')
