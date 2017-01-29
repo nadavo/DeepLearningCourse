@@ -28,11 +28,11 @@ local mean = {}  -- store the mean, to normalize the test set in the future
 local stdv  = {} -- store the standard-deviation for the future
 for i=1,3 do -- over each image channel
     mean[i] = trainData[{ {}, {i}, {}, {}  }]:mean() -- mean estimation
-    print('Channel ' .. i .. ', Mean: ' .. mean[i])
+    --print('Channel ' .. i .. ', Mean: ' .. mean[i])
     trainData[{ {}, {i}, {}, {}  }]:add(-mean[i]) -- mean subtraction
 
     stdv[i] = trainData[{ {}, {i}, {}, {}  }]:std() -- std estimation
-    print('Channel ' .. i .. ', Standard Deviation: ' .. stdv[i])
+    --print('Channel ' .. i .. ', Standard Deviation: ' .. stdv[i])
     trainData[{ {}, {i}, {}, {}  }]:div(stdv[i]) -- std scaling
 end
 
@@ -41,6 +41,39 @@ end
 for i=1,3 do -- over each image channel
     testData[{ {}, {i}, {}, {}  }]:add(-mean[i]) -- mean subtraction
     testData[{ {}, {i}, {}, {}  }]:div(stdv[i]) -- std scaling
+end
+
+
+do
+local BatchFlip,parent = torch.class('nn.BatchFlip', 'nn.Module')
+
+	function BatchFlip:__init()
+		parent.__init(self)
+		self.train = true
+	end 
+
+function BatchFlip:updateOutput(input)
+	if self.train then
+		local permutation = torch.randperm(input:size(1))
+	for i=1,input:size(1) do
+		if permutation[i] % 4 == 0 then
+		-- hflip
+			image.hflip(input[i]:float(), input[i]:float())
+		end
+		if permutation[i] % 4 == 1 then
+		-- vflip
+			image.vflip(input[i]:float(), input[i]:float())
+		end
+		if permutation[i] % 4 == 2 then
+		-- random crop
+			randomcrop(input[i], 10, 'reflection')
+		end
+	end
+	end
+	--self.output:set(input)
+	self.output:set(input:cuda())
+	return self.output
+end
 end
 
 local batchSize = 64
@@ -73,5 +106,5 @@ end
 ---------------------------------------------------------------------
 
 testError = forwardNet(testData, testLabels)
-
+print(testError)
 return testError
