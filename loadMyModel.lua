@@ -5,8 +5,15 @@ require 'cunn'
 require 'cudnn'
 require 'optim'
 
-local trainset = torch.load('cifar.torch/cifar10-train.t7')
-local testset = torch.load('cifar.torch/cifar10-test.t7')
+cmd = torch.CmdLine()
+cmd:option('-model','./network.model','Path to model file which will be loaded')
+cmd:option('-cifar','./cifar.torch','Path to directory containing cifar10 train and test data sets')
+
+-- parse input params
+opt = cmd:parse(arg or {})
+
+local trainset = torch.load(opt.cifar..'/cifar10-train.t7')
+local testset = torch.load(opt.cifar..'/cifar10-test.t7')
 
 local classes = {'airplane', 'automobile', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'}
 
@@ -38,7 +45,7 @@ end
 
 local batchSize = 64
 local optimState = {}
-model = torch.load('network.model')
+model = torch.load(opt.model)
 criterion = nn.ClassNLLCriterion():cuda()
 
 function forwardNet(data,labels)
