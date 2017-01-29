@@ -2285,3 +2285,4 @@ automobile
 [torch.CudaTensor of size 10]
 
 saving the model as network.model	
+Best Test Error: 0.18249198717949
