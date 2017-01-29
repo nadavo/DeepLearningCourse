@@ -3,6 +3,8 @@
 ###Aviv Sugarman - 305652729
 
 
+**Report.PDF** - Short report describing our work + graphs
+
 **cifar10_classifier_*optimizer*_*data-augmentation*.lua** - modified file from Tutorial 5 which builds the network according to the optimizer and data augmentation and saves it to a file in your cwd called 'network.model'
 
 We trained 4 different models (best accuracy over 300 epochs):
@@ -20,9 +22,32 @@ receives 2 parameters:
 
 -cifar *path to cifar10 datasets directory* - default is: ./cifar.torch
 
-usage:
+
+Usage:
 ```
 th loadMyModel.lua -model <path to model file> -cifar <path to cifar10 datasets directory>
 ```
 
-**Report.PDF** - Short report describing our work + graphs
+Models are in:
+```
+on ml8.iem.technion.ac.il
+/home/nadavo@st.technion.ac.il/hw2_models/<optimizer_data-augmentation>/network.model
+```
+
+Example:
+```
+th loadMyModel.lua -model /home/nadavo@st.technion.ac.il/hw2_models/adam_hflip/network.model  -cifar ./cifar.torch
+```
+
+Please make sure you have installed all dependencies:
+```
+luarocks install nn
+luarocks install cunn
+luarocks install cudnn
+luarocks install optim
+luarocks install image
+luarocks install gnuplot
+git clone https://github.com/soumith/cifar.torch.git
+cd ./cifar.torch/
+th Cifar10BinToTensor.lua
+```
