@@ -52,3 +52,2236 @@ after train loss
 after test loss	
 before shuffle	
 after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 5:	
+Training error: 0.33056578104994	Training Loss: 1.0143467171091	
+Test error: 0.34605368589744	Test Loss: 0.99050708458974	
+ConfusionMatrix:
+[[     759      27      62      20      11       6       9      11      73      20]   76.052% 	[class: airplane]
+ [      48     865       6       5       2       0      14       8      12      39]   86.587% 	[class: automobile]
+ [     113       2     533      75      82      49     114      23       6       2]   53.353% 	[class: bird]
+ [      32       7      98     536      37     114     143      10       7      13]   53.761% 	[class: cat]
+ [      21       3     104      63     494      67     129     105      12       2]   49.400% 	[class: deer]
+ [      16       6      73     333      35     451      44      33       4       2]   45.236% 	[class: dog]
+ [      16       1      77      57      17      13     811       5       3       0]   81.100% 	[class: frog]
+ [      27       2      51      75      63      95      18     652       3      11]   65.396% 	[class: horse]
+ [     175      31      13      24      11       2      15       2     697      27]   69.910% 	[class: ship]
+ [      60     103      11      14       8       5      11      33      24     731]]  73.100% 	[class: truck]
+ + average row correct: 65.389495491982% 
+ + average rowUcol correct (VOC measure): 49.792718589306% 
+ + global correct: 65.394631410256%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 10:	
+Training error: 0.26988636363636	Training Loss: 0.81169066508509	
+Test error: 0.28776041666667	Test Loss: 0.8344350063648	
+ConfusionMatrix:
+[[     646      29      83      24      23      11       8      36      85      53]   64.729% 	[class: airplane]
+ [       9     831       6      20       5       5       2      10      18      93]   83.183% 	[class: automobile]
+ [      38       0     520     102     125      65      74      57      12       6]   52.052% 	[class: bird]
+ [      10       7      45     622      48     175      25      41      13      11]   62.387% 	[class: cat]
+ [       2       1      28      82     709      26      36      98      15       3]   70.900% 	[class: deer]
+ [       1       2      29     181      53     638       9      77       4       3]   63.992% 	[class: dog]
+ [       5       3      32     210      70      46     622       7       3       2]   62.200% 	[class: frog]
+ [       7       0      12      44      80      48       4     787       3      12]   78.937% 	[class: horse]
+ [      43      19       5      32       7       3       5       7     852      24]   85.456% 	[class: ship]
+ [      11      34       2      18       6       3       0      21      21     884]]  88.400% 	[class: truck]
+ + average row correct: 71.223700642586% 
+ + average rowUcol correct (VOC measure): 56.574302017689% 
+ + global correct: 71.223958333333%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 15:	
+Training error: 0.23749599871959	Training Loss: 0.70984996849535	
+Test error: 0.27644230769231	Test Loss: 0.77547294665606	
+ConfusionMatrix:
+[[     692      14      48      30      12      10      12       8     145      27]   69.339% 	[class: airplane]
+ [      19     798       0      20       1       7       4       1      48     101]   79.880% 	[class: automobile]
+ [      60       2     536     158      97      51      56      15      16       8]   53.654% 	[class: bird]
+ [      11       4      27     735      28     131      24      11      12      14]   73.721% 	[class: cat]
+ [       8       1      59     111     685      31      37      44      21       3]   68.500% 	[class: deer]
+ [       4       2      17     271      32     641       9      12       5       4]   64.293% 	[class: dog]
+ [       6       0      52     167      37      35     695       1       6       1]   69.500% 	[class: frog]
+ [      15       1      19     104      62      98       5     668       8      17]   67.001% 	[class: horse]
+ [      27       7       4      24       3       3       2       1     910      16]   91.274% 	[class: ship]
+ [      29      26       3      19       3       2       0       7      47     864]]  86.400% 	[class: truck]
+ + average row correct: 72.356107831001% 
+ + average rowUcol correct (VOC measure): 58.101559877396% 
+ + global correct: 72.355769230769%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 20:	
+Training error: 0.21552896927017	Training Loss: 0.64300887899118	
+Test error: 0.24549278846154	Test Loss: 0.71214812210737	
+ConfusionMatrix:
+[[     726      30      45      21       9       7      15      18      88      39]   72.745% 	[class: airplane]
+ [       8     879       2       4       0       5       5       8      17      71]   87.988% 	[class: automobile]
+ [      59       4     571      55      74      87      84      51       7       7]   57.157% 	[class: bird]
+ [      12      11      35     516      33     270      44      44      10      22]   51.755% 	[class: cat]
+ [       8       3      41      41     661      64      32     139       9       2]   66.100% 	[class: deer]
+ [       3       6      19      85      22     785       7      63       4       3]   78.736% 	[class: dog]
+ [       7       3      41      53      57      56     769      10       2       2]   76.900% 	[class: frog]
+ [       9       4      13      16      25      61       6     854       3       6]   85.657% 	[class: horse]
+ [      31      21       3      17       4       4       5       7     884      21]   88.666% 	[class: ship]
+ [      12      51       3       8       0       1       1      21      15     888]]  88.800% 	[class: truck]
+ + average row correct: 75.450508594513% 
+ + average rowUcol correct (VOC measure): 61.231954097748% 
+ + global correct: 75.450721153846%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 25:	
+Training error: 0.19972391165173	Training Loss: 0.59695192786093	
+Test error: 0.23868189102564	Test Loss: 0.6894781792011	
+ConfusionMatrix:
+[[     695      14      54      18      10       5      23       9     138      32]   69.639% 	[class: airplane]
+ [      12     844       1      10       1       5      12       3      59      52]   84.484% 	[class: automobile]
+ [      47       3     585      71      76     108      65      22      20       2]   58.559% 	[class: bird]
+ [      13       6      29     586      32     242      36      15      26      12]   58.776% 	[class: cat]
+ [       5       0      36      56     740      58      30      52      22       1]   74.000% 	[class: deer]
+ [       2       1      17     104      25     796      14      28       7       3]   79.840% 	[class: dog]
+ [       4       1      39      80      48      44     777       3       3       1]   77.700% 	[class: frog]
+ [       7       2      15      31      44      87       8     787      10       6]   78.937% 	[class: horse]
+ [      23       8       2      13       2       4       5       0     933       7]   93.581% 	[class: ship]
+ [      13      33       4      10       2       3       6      13      58     858]]  85.800% 	[class: truck]
+ + average row correct: 76.131571531296% 
+ + average rowUcol correct (VOC measure): 62.316416800022% 
+ + global correct: 76.131810897436%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 30:	
+Training error: 0.18964068501921	Training Loss: 0.56375641619045	
+Test error: 0.21945112179487	Test Loss: 0.63577345835093	
+ConfusionMatrix:
+[[     799      16      56      12      24       2       6      12      51      20]   80.060% 	[class: airplane]
+ [      21     869       5       3       3       4       8       4      19      63]   86.987% 	[class: automobile]
+ [      50       1     775      20      54      29      39      26       4       1]   77.578% 	[class: bird]
+ [      24       3     104     570      58     151      49      23      10       5]   57.172% 	[class: cat]
+ [       7       1     102      26     743      20      43      51       6       1]   74.300% 	[class: deer]
+ [       4       2      70     117      50     697      20      34       3       0]   69.910% 	[class: dog]
+ [       8       1      86      33      34      17     809       5       6       1]   80.900% 	[class: frog]
+ [      12       0      46      23      56      63       5     789       1       2]   79.137% 	[class: horse]
+ [      54      14      14      11       7       0       5       4     871      17]   87.362% 	[class: ship]
+ [      30      35       7      12       6       3       4      13      19     871]]  87.100% 	[class: truck]
+ + average row correct: 78.050542473793% 
+ + average rowUcol correct (VOC measure): 64.904164969921% 
+ + global correct: 78.054887820513%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 35:	
+Training error: 0.18041773367478	Training Loss: 0.53384377026069	
+Test error: 0.21664663461538	Test Loss: 0.6245379377252	
+ConfusionMatrix:
+[[     782      20      33      17      13       4       5      15      80      29]   78.357% 	[class: airplane]
+ [       9     889       2       7       0       2       6       4      11      69]   88.989% 	[class: automobile]
+ [      58       2     644      35     106      67      36      36      10       5]   64.464% 	[class: bird]
+ [      13       7      46     584      61     183      23      48      15      17]   58.576% 	[class: cat]
+ [      11       2      34      36     784      28      15      77      11       2]   78.400% 	[class: deer]
+ [       3       2      20     104      46     757       6      48       6       5]   75.928% 	[class: dog]
+ [       8       4      48      57      70      45     751      13       3       1]   75.100% 	[class: frog]
+ [      13       0      16      18      38      51       3     851       2       5]   85.356% 	[class: horse]
+ [      46      23       0       9       1       3       4       4     878      29]   88.064% 	[class: ship]
+ [      22      32       6       6       2       2       1      15      13     901]]  90.100% 	[class: truck]
+ + average row correct: 78.333393335342% 
+ + average rowUcol correct (VOC measure): 65.007017254829% 
+ + global correct: 78.335336538462%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 40:	
+Training error: 0.17189500640205	Training Loss: 0.50784620833458	
+Test error: 0.22075320512821	Test Loss: 0.62850566685964	
+ConfusionMatrix:
+[[     797      26      47      28       9       2      14       7      41      27]   79.860% 	[class: airplane]
+ [      16     886       1       6       0       3      11       3      10      63]   88.689% 	[class: automobile]
+ [      46       1     701      38      49      46      97      18       1       2]   70.170% 	[class: bird]
+ [      13       5      64     652      25     103      93      19      10      13]   65.396% 	[class: cat]
+ [      12       0      80      52     678      27     106      35       7       3]   67.800% 	[class: deer]
+ [       1       7      37     154      23     685      55      31       1       3]   68.706% 	[class: dog]
+ [       6       0      40      37      14       6     889       2       3       3]   88.900% 	[class: frog]
+ [      15       1      41      54      40      50      23     758       1      14]   76.028% 	[class: horse]
+ [      65      26      10      14       2       2       8       0     848      22]   85.055% 	[class: ship]
+ [      26      49       4       6       2       3       7       6      11     886]]  88.600% 	[class: truck]
+ + average row correct: 77.920413613319% 
+ + average rowUcol correct (VOC measure): 64.570998251438% 
+ + global correct: 77.924679487179%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 45:	
+Training error: 0.16353233034571	Training Loss: 0.48517497925615	
+Test error: 0.21133814102564	Test Loss: 0.60750946316582	
+ConfusionMatrix:
+[[     808      13      34      16      12       2       7      10      66      30]   80.962% 	[class: airplane]
+ [      17     874       4       8       0       3       4       2      13      74]   87.487% 	[class: automobile]
+ [      59       3     738      43      42      45      42      18       3       6]   73.874% 	[class: bird]
+ [      16       6      64     666      24     130      43      22      10      16]   66.800% 	[class: cat]
+ [      15       0      94      47     682      26      68      52      13       3]   68.200% 	[class: deer]
+ [       2       1      40     173      20     705      23      28       2       3]   70.712% 	[class: dog]
+ [      15       1      73      61       9      17     815       4       4       1]   81.500% 	[class: frog]
+ [      19       2      39      41      34      50      10     793       3       6]   79.539% 	[class: horse]
+ [      45      15       5      15       2       1       7       2     882      23]   88.465% 	[class: ship]
+ [      17      37       8      11       1       0       1       6       8     911]]  91.100% 	[class: truck]
+ + average row correct: 78.863983750343% 
+ + average rowUcol correct (VOC measure): 65.918712615967% 
+ + global correct: 78.866185897436%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 50:	
+Training error: 0.15887083866837	Training Loss: 0.47028110339455	
+Test error: 0.21063701923077	Test Loss: 0.60787971012103	
+ConfusionMatrix:
+[[     832      18      36      17       5       2       3      11      51      23]   83.367% 	[class: airplane]
+ [      16     923       3       1       0       2       5       5       7      37]   92.392% 	[class: automobile]
+ [      61       4     686      66      49      45      40      39       4       5]   68.669% 	[class: bird]
+ [      16       8      50     705      24     105      28      39      11      11]   70.712% 	[class: cat]
+ [      18       1      72      56     681      23      42      91      14       2]   68.100% 	[class: deer]
+ [       4       5      33     189      27     668      16      46       3       6]   67.001% 	[class: dog]
+ [      12       2      48      67      16      22     819      12       2       0]   81.900% 	[class: frog]
+ [      14       0      26      29      31      36       6     845       1       9]   84.754% 	[class: horse]
+ [      59      29       5      18       1       3       2       2     855      23]   85.757% 	[class: ship]
+ [      27      70       4       7       1       1       3      10      10     867]]  86.700% 	[class: truck]
+ + average row correct: 78.935247063637% 
+ + average rowUcol correct (VOC measure): 65.914489626884% 
+ + global correct: 78.936298076923%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 55:	
+Training error: 0.15304897567222	Training Loss: 0.4517313709027	
+Test error: 0.20282451923077	Test Loss: 0.58456880666125	
+ConfusionMatrix:
+[[     799      12      31      24      13       1      13      11      68      26]   80.060% 	[class: airplane]
+ [      16     873       4       7       1       2      10       3      17      66]   87.387% 	[class: automobile]
+ [      58       3     713      38      51      21      75      28       9       3]   71.371% 	[class: bird]
+ [      13       3      66     677      39      78      60      37      12      12]   67.904% 	[class: cat]
+ [       8       1      81      47     735      15      53      46      12       2]   73.500% 	[class: deer]
+ [       1       3      66     183      24     635      26      46       8       5]   63.691% 	[class: dog]
+ [       6       0      35      43      14       8     879       8       6       1]   87.900% 	[class: frog]
+ [      10       1      39      27      44      26       6     837       3       4]   83.952% 	[class: horse]
+ [      43      11       1      14       2       1       7       4     901      13]   90.371% 	[class: ship]
+ [      18      31       5       6       0       1       5       8      16     910]]  91.000% 	[class: truck]
+ + average row correct: 79.713663458824% 
+ + average rowUcol correct (VOC measure): 66.931044757366% 
+ + global correct: 79.717548076923%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 60:	
+Training error: 0.14900768245839	Training Loss: 0.43796325578961	
+Test error: 0.20052083333333	Test Loss: 0.58820338843343	
+ConfusionMatrix:
+[[     811      22      18      20      15       1      18      19      48      26]   81.263% 	[class: airplane]
+ [      10     917       1       7       0       1      10       1      11      41]   91.792% 	[class: automobile]
+ [      62       2     635      62      81      35      82      33       4       3]   63.564% 	[class: bird]
+ [      11       6      32     718      42      77      53      40      11       7]   72.016% 	[class: cat]
+ [       7       1      29      39     805      12      44      56       5       2]   80.500% 	[class: deer]
+ [       4       3      31     177      36     656      29      52       6       3]   65.797% 	[class: dog]
+ [       7       1      22      61      39      15     847       5       3       0]   84.700% 	[class: frog]
+ [      13       0      14      32      46      24      11     852       2       3]   85.456% 	[class: horse]
+ [      53      19       3      12       5       0      11       3     876      15]   87.864% 	[class: ship]
+ [      19      54       2      13       6       0       6      16      19     865]]  86.500% 	[class: truck]
+ + average row correct: 79.94512796402% 
+ + average rowUcol correct (VOC measure): 67.147809863091% 
+ + global correct: 79.947916666667%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 65:	
+Training error: 0.14698703585147	Training Loss: 0.42791891538761	
+Test error: 0.21374198717949	Test Loss: 0.61674182881147	
+ConfusionMatrix:
+[[     836      23      39      18       3       0       9       5      45      20]   83.768% 	[class: airplane]
+ [      14     923       5       4       0       2       7       0       9      35]   92.392% 	[class: automobile]
+ [      53       4     724      70      26      18      72      26       3       3]   72.472% 	[class: bird]
+ [      20       8      58     731      11      68      68      19      11       3]   73.320% 	[class: cat]
+ [      15       2      82     115     620      14      79      64       7       2]   62.000% 	[class: deer]
+ [       4       8      38     224      12     624      47      38       2       0]   62.588% 	[class: dog]
+ [      13       2      32      59       8       2     878       3       3       0]   87.800% 	[class: frog]
+ [      25       3      35      55      26      33      15     798       1       6]   80.040% 	[class: horse]
+ [      63      22       4      15       0       0       8       2     860      23]   86.259% 	[class: ship]
+ [      26      72       8      16       1       1       8       4       8     856]]  85.600% 	[class: truck]
+ + average row correct: 78.623901605606% 
+ + average rowUcol correct (VOC measure): 65.620403289795% 
+ + global correct: 78.625801282051%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 70:	
+Training error: 0.14110515364917	Training Loss: 0.41355069109481	
+Test error: 0.20262419871795	Test Loss: 0.59762155083128	
+ConfusionMatrix:
+[[     801      19      53      13       9       2       8       7      61      25]   80.261% 	[class: airplane]
+ [      14     891       5       3       0       2      10       2      12      60]   89.189% 	[class: automobile]
+ [      46       1     740      35      50      32      70      16       5       4]   74.074% 	[class: bird]
+ [      19       9      56     612      47     134      80      16      16       8]   61.384% 	[class: cat]
+ [       8       1      78      28     769      19      61      21      13       2]   76.900% 	[class: deer]
+ [       7       4      43     117      31     721      37      27       5       5]   72.317% 	[class: dog]
+ [       7       4      45      30      21       9     880       1       3       0]   88.000% 	[class: frog]
+ [      17       2      44      29      60      49      16     766       5       9]   76.830% 	[class: horse]
+ [      40      16       4       9       4       1       9       1     899      14]   90.171% 	[class: ship]
+ [      20      48       5       5       2       1       7       2      28     882]]  88.200% 	[class: truck]
+ + average row correct: 79.732589125633% 
+ + average rowUcol correct (VOC measure): 66.832868456841% 
+ + global correct: 79.737580128205%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 75:	
+Training error: 0.13938460307298	Training Loss: 0.40566586950143	
+Test error: 0.19411057692308	Test Loss: 0.57964290802677	
+ConfusionMatrix:
+[[     815      21      52      11       7       1       7      14      45      25]   81.663% 	[class: airplane]
+ [      13     905       1       4       0       2      11       1       7      55]   90.591% 	[class: automobile]
+ [      43       4     766      35      28      32      60      21       4       6]   76.677% 	[class: bird]
+ [      12       8      61     651      28     133      61      21       9      13]   65.296% 	[class: cat]
+ [       8       0      79      46     729      26      52      46      11       3]   72.900% 	[class: deer]
+ [       6       5      45     130      25     731      23      26       3       3]   73.320% 	[class: dog]
+ [      10       2      40      50      13      16     861       4       3       1]   86.100% 	[class: frog]
+ [      14       1      40      37      34      46       8     811       1       5]   81.344% 	[class: horse]
+ [      51      19       2      14       2       2       7       1     879      20]   88.164% 	[class: ship]
+ [      22      41       7       8       1       2       2       6      13     898]]  89.800% 	[class: truck]
+ + average row correct: 80.585497021675% 
+ + average rowUcol correct (VOC measure): 68.146307170391% 
+ + global correct: 80.588942307692%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 80:	
+Training error: 0.13380281690141	Training Loss: 0.3907154428936	
+Test error: 0.19391025641026	Test Loss: 0.5881818265487	
+ConfusionMatrix:
+[[     780      24      53      13      21       2       9      15      53      28]   78.156% 	[class: airplane]
+ [      11     911       3       5       2       2       5       2       6      52]   91.191% 	[class: automobile]
+ [      33       5     733      30      72      35      65      20       2       4]   73.373% 	[class: bird]
+ [       7       5      61     644      57     130      52      24       8       9]   64.594% 	[class: cat]
+ [       4       1      38      36     823      16      36      41       4       1]   82.300% 	[class: deer]
+ [       4       5      45     112      44     733      24      23       4       3]   73.521% 	[class: dog]
+ [       6       4      31      40      29      14     872       3       0       1]   87.200% 	[class: frog]
+ [       6       1      31      29      56      56       8     804       0       6]   80.642% 	[class: horse]
+ [      52      24       5      10       4       1       7       5     867      22]   86.961% 	[class: ship]
+ [      14      55       8      12       2       1       3       8      16     881]]  88.100% 	[class: truck]
+ + average row correct: 80.603801608086% 
+ + average rowUcol correct (VOC measure): 68.049449324608% 
+ + global correct: 80.608974358974%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 85:	
+Training error: 0.13238236235595	Training Loss: 0.38759259700241	
+Test error: 0.20112179487179	Test Loss: 0.60877927927635	
+ConfusionMatrix:
+[[     826      19      47       6      14       1       5      14      46      20]   82.766% 	[class: airplane]
+ [      10     905       2       3       3       3      10       5      12      46]   90.591% 	[class: automobile]
+ [      35       6     715      24     108      42      38      26       3       2]   71.572% 	[class: bird]
+ [      14       6      63     540      87     190      47      30       9      11]   54.162% 	[class: cat]
+ [      11       1      46      15     860      17      14      27       7       2]   86.000% 	[class: deer]
+ [       6       3      35      66      57     779      14      31       5       1]   78.134% 	[class: dog]
+ [       7       0      37      40      94      25     789       4       4       0]   78.900% 	[class: frog]
+ [      11       0      33       8      77      50       9     803       2       4]   80.542% 	[class: horse]
+ [      59      18       5      10       3       1       6       4     881      10]   88.365% 	[class: ship]
+ [      22      47       5       5       9       3       5      10      16     878]]  87.800% 	[class: truck]
+ + average row correct: 79.883130788803% 
+ + average rowUcol correct (VOC measure): 67.162036597729% 
+ + global correct: 79.887820512821%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 90:	
+Training error: 0.12946142765685	Training Loss: 0.37575799516771	
+Test error: 0.19721554487179	Test Loss: 0.59890825301409	
+ConfusionMatrix:
+[[     798      10      58      12       8       3       7      13      71      18]   79.960% 	[class: airplane]
+ [      15     880       3       2       2       3       9       4      20      61]   88.088% 	[class: automobile]
+ [      37       2     729      29      65      61      44      23       5       4]   72.973% 	[class: bird]
+ [      16       3      55     589      44     205      45      19      12       9]   59.077% 	[class: cat]
+ [      11       0      47      30     814      30      33      24       8       3]   81.400% 	[class: deer]
+ [       5       3      27      82      31     795      18      31       2       3]   79.739% 	[class: dog]
+ [       7       1      55      41      41      24     821       5       4       1]   82.100% 	[class: frog]
+ [      12       0      30      14      59      72       7     797       1       5]   79.940% 	[class: horse]
+ [      42       8       1      10       2       4       7       3     909      11]   91.174% 	[class: ship]
+ [      21      34       8       7       2       3       4      10      28     883]]  88.300% 	[class: truck]
+ + average row correct: 80.275076627731% 
+ + average rowUcol correct (VOC measure): 67.703273892403% 
+ + global correct: 80.278445512821%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 95:	
+Training error: 0.12820102432778	Training Loss: 0.37240075736894	
+Test error: 0.19461137820513	Test Loss: 0.59131628848039	
+ConfusionMatrix:
+[[     762      18      65       8       5       3       8      16      76      37]   76.353% 	[class: airplane]
+ [       9     901       3       1       1       4       6       2      11      61]   90.190% 	[class: automobile]
+ [      36       3     761      24      37      44      48      36       4       6]   76.176% 	[class: bird]
+ [      12       4      69     595      53     145      62      36       8      13]   59.679% 	[class: cat]
+ [      12       1      74      25     760      20      29      68      10       1]   76.000% 	[class: deer]
+ [       5       5      44      92      29     753      20      41       4       4]   75.527% 	[class: dog]
+ [       6       2      62      38      25      13     847       2       4       1]   84.700% 	[class: frog]
+ [      10       0      32      14      26      36       5     866       4       4]   86.861% 	[class: horse]
+ [      31      15       7      10       2       2       9       5     892      24]   89.468% 	[class: ship]
+ [      12      36       5      11       1       1       5      11      14     904]]  90.400% 	[class: truck]
+ + average row correct: 80.535367131233% 
+ + average rowUcol correct (VOC measure): 67.901276946068% 
+ + global correct: 80.538862179487%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 100:	
+Training error: 0.12325944302177	Training Loss: 0.35645540989697	
+Test error: 0.20432692307692	Test Loss: 0.64358274447612	
+ConfusionMatrix:
+[[     742      19      63       8      10       3      19       7     105      22]   74.349% 	[class: airplane]
+ [      14     890       3       2       0       2      20       2      34      32]   89.089% 	[class: automobile]
+ [      29       3     761      23      40      27      84      20      10       2]   76.176% 	[class: bird]
+ [      11       4      77     554      45     148     120      13      17       8]   55.567% 	[class: cat]
+ [       7       0      66      24     764      18      86      23      11       1]   76.400% 	[class: deer]
+ [       5       2      56      69      29     750      48      26      10       2]   75.226% 	[class: dog]
+ [       4       1      28      13      16       6     929       1       2       0]   92.900% 	[class: frog]
+ [      12       2      44      20      58      46      19     787       6       3]   78.937% 	[class: horse]
+ [      16      10       7       6       2       1      12       2     935       6]   93.781% 	[class: ship]
+ [      23      67       9       5       1       4      12       6      41     832]]  83.200% 	[class: truck]
+ + average row correct: 79.562450051308% 
+ + average rowUcol correct (VOC measure): 66.430198252201% 
+ + global correct: 79.567307692308%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 105:	
+Training error: 0.12287932138284	Training Loss: 0.35838662551551	
+Test error: 0.19120592948718	Test Loss: 0.59524955438116	
+ConfusionMatrix:
+[[     794      28      28      16      20       0      10      16      57      29]   79.559% 	[class: airplane]
+ [      10     910       2       5       1       2       5       1      11      52]   91.091% 	[class: automobile]
+ [      51       2     681      64      80      26      61      26       4       4]   68.168% 	[class: bird]
+ [      14       5      42     710      53      88      48      16      10      11]   71.214% 	[class: cat]
+ [       8       1      32      43     850      16      22      24       3       1]   85.000% 	[class: deer]
+ [       4       4      29     166      46     682      30      29       5       2]   68.405% 	[class: dog]
+ [       6       2      21      53      39       9     862       3       4       1]   86.200% 	[class: frog]
+ [       9       1      21      40      76      34       9     801       1       5]   80.341% 	[class: horse]
+ [      41      13       3      13       2       2      10       2     899      12]   90.171% 	[class: ship]
+ [      20      45       3      13       3       1       1       8      20     886]]  88.600% 	[class: truck]
+ + average row correct: 80.874876379967% 
+ + average rowUcol correct (VOC measure): 68.524844646454% 
+ + global correct: 80.879407051282%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 110:	
+Training error: 0.11885803457106	Training Loss: 0.34550361770292	
+Test error: 0.19260817307692	Test Loss: 0.59389453811141	
+ConfusionMatrix:
+[[     823      22      28      13      12       1       5      17      44      33]   82.465% 	[class: airplane]
+ [      14     887       2       1       0       2       8       1       9      75]   88.789% 	[class: automobile]
+ [      55       5     700      45      52      51      53      25       5       8]   70.070% 	[class: bird]
+ [      12       8      39     660      44     129      62      21       9      13]   66.199% 	[class: cat]
+ [      12       0      43      39     794      27      38      34      10       3]   79.400% 	[class: deer]
+ [       5       3      26     105      21     772      24      27       8       6]   77.432% 	[class: dog]
+ [       7       7      40      45      28      16     846       4       4       3]   84.600% 	[class: frog]
+ [      14       1      18      27      60      59       7     798       3      10]   80.040% 	[class: horse]
+ [      58      15       4       9       2       2       5       3     879      20]   88.164% 	[class: ship]
+ [      22      32       5       7       1       2       3       5      21     902]]  90.200% 	[class: truck]
+ + average row correct: 80.735930204391% 
+ + average rowUcol correct (VOC measure): 68.127237558365% 
+ + global correct: 80.739182692308%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 115:	
+Training error: 0.1182978553137	Training Loss: 0.34237293740699	
+Test error: 0.19000400641026	Test Loss: 0.58236823670375	
+ConfusionMatrix:
+[[     807      22      41       8      15       2       4      13      61      25]   80.862% 	[class: airplane]
+ [      12     913       4       3       3       2       6       0      12      44]   91.391% 	[class: automobile]
+ [      44       4     745      31      54      35      50      27       6       3]   74.575% 	[class: bird]
+ [      19      11      59     587      57     156      51      33      12      12]   58.877% 	[class: cat]
+ [      13       0      50      26     821      20      32      34       4       0]   82.100% 	[class: deer]
+ [       7       7      31      70      42     776      22      35       5       2]   77.833% 	[class: dog]
+ [       7       5      50      37      31      13     850       2       3       2]   85.000% 	[class: frog]
+ [      21       2      38      19      45      41       7     816       1       7]   81.846% 	[class: horse]
+ [      44      10       5       7       3       2       6       3     901      16]   90.371% 	[class: ship]
+ [      27      54       7       5       3       2       6       5      20     871]]  87.100% 	[class: truck]
+ + average row correct: 80.995445847511% 
+ + average rowUcol correct (VOC measure): 68.468117117882% 
+ + global correct: 80.999599358974%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 120:	
+Training error: 0.11669734314981	Training Loss: 0.33518562572752	
+Test error: 0.19711538461538	Test Loss: 0.61656988326174	
+ConfusionMatrix:
+[[     837      28      14      12       4       0       5      15      55      28]   83.868% 	[class: airplane]
+ [       7     936       1       5       2       3       3       0       6      36]   93.694% 	[class: automobile]
+ [      73       9     613      86      48      54      68      33      11       4]   61.361% 	[class: bird]
+ [      21      13      18     740      32      98      33      23       9      10]   74.223% 	[class: cat]
+ [      13       2      32      85     731      32      32      61      10       2]   73.100% 	[class: deer]
+ [       6       6      12     168      18     726      21      36       2       2]   72.818% 	[class: dog]
+ [      10      11      21      77      27      16     830       4       4       0]   83.000% 	[class: frog]
+ [      11       2      13      42      30      51       2     836       5       5]   83.852% 	[class: horse]
+ [      44      18       0      11       1       3       5       1     899      15]   90.171% 	[class: ship]
+ [      21      64       3       9       1       3       1       8      22     868]]  86.800% 	[class: truck]
+ + average row correct: 80.288596749306% 
+ + average rowUcol correct (VOC measure): 67.692379653454% 
+ + global correct: 80.288461538462%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 125:	
+Training error: 0.11397647247119	Training Loss: 0.33142615732631	
+Test error: 0.19340945512821	Test Loss: 0.61092835827134	
+ConfusionMatrix:
+[[     824      17      18      21      10       0       9      16      58      25]   82.565% 	[class: airplane]
+ [      14     886       1       3       1       3      17       0      16      58]   88.689% 	[class: automobile]
+ [      62       2     679      44      62      28      75      34       9       4]   67.968% 	[class: bird]
+ [      16       5      51     637      42     134      65      29      11       7]   63.892% 	[class: cat]
+ [       5       1      49      32     805      20      41      38       8       1]   80.500% 	[class: deer]
+ [       4       1      30     110      33     734      35      41       6       3]   73.621% 	[class: dog]
+ [      10       1      36      39      29       6     870       3       5       1]   87.000% 	[class: frog]
+ [       8       0      25      29      51      30      11     836       4       3]   83.852% 	[class: horse]
+ [      46      11       1      10       3       1       8       2     900      15]   90.271% 	[class: ship]
+ [      24      31       3      12       2       2       6      11      27     882]]  88.200% 	[class: truck]
+ + average row correct: 80.655668973923% 
+ + average rowUcol correct (VOC measure): 68.076812624931% 
+ + global correct: 80.659054487179%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 130:	
+Training error: 0.11305617797695	Training Loss: 0.32611583554867	
+Test error: 0.19411057692308	Test Loss: 0.59656473325613	
+ConfusionMatrix:
+[[     822      29      38       9       8       2       6      12      48      24]   82.365% 	[class: airplane]
+ [      12     926       3       2       0       2       6       1       4      43]   92.693% 	[class: automobile]
+ [      50       3     738      32      42      38      58      28       7       3]   73.874% 	[class: bird]
+ [      25       5      69     631      45     122      61      18      13       8]   63.290% 	[class: cat]
+ [      13       2      74      24     766      26      39      52       3       1]   76.600% 	[class: deer]
+ [       6       5      32     118      31     736      28      33       4       4]   73.821% 	[class: dog]
+ [       8       2      51      31      29      10     862       3       3       1]   86.200% 	[class: frog]
+ [      20       1      31      30      42      40       7     818       5       3]   82.046% 	[class: horse]
+ [      57      20       5       8       2       3       5       2     879      16]   88.164% 	[class: ship]
+ [      24      62       6       6       2       0       2       9      21     868]]  86.800% 	[class: truck]
+ + average row correct: 80.585325956345% 
+ + average rowUcol correct (VOC measure): 67.9800593853% 
+ + global correct: 80.588942307692%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 135:	
+Training error: 0.11171574903969	Training Loss: 0.32165077250456	
+Test error: 0.19030448717949	Test Loss: 0.58094836484927	
+ConfusionMatrix:
+[[     821      22      39       9      13       2       8      11      50      23]   82.265% 	[class: airplane]
+ [      10     921       3       3       2       2       6       1       7      44]   92.192% 	[class: automobile]
+ [      46       2     743      37      58      26      54      22       6       5]   74.374% 	[class: bird]
+ [      20       9      65     663      36     113      49      21      12       9]   66.500% 	[class: cat]
+ [       9       2      56      45     802      24      31      25       4       2]   80.200% 	[class: deer]
+ [       5       2      37     139      31     724      20      32       4       3]   72.618% 	[class: dog]
+ [       8       4      41      46      30      21     844       4       1       1]   84.400% 	[class: frog]
+ [      13       0      29      36      60      47       7     799       2       4]   80.140% 	[class: horse]
+ [      51      16       4      11       1       1       5       0     887      21]   88.967% 	[class: ship]
+ [      26      45       7       9       3       1       2       8      19     880]]  88.000% 	[class: truck]
+ + average row correct: 80.965576767921% 
+ + average rowUcol correct (VOC measure): 68.666680157185% 
+ + global correct: 80.969551282051%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 140:	
+Training error: 0.11031530089629	Training Loss: 0.31741833721172	
+Test error: 0.19461137820513	Test Loss: 0.61317435527841	
+ConfusionMatrix:
+[[     763      18      67      13      14       3       8      10      70      32]   76.453% 	[class: airplane]
+ [      13     910       6       3       0       2       6       0      12      47]   91.091% 	[class: automobile]
+ [      36       4     752      33      50      37      64      14       5       4]   75.275% 	[class: bird]
+ [      14       5      75     638      39     135      55      20       8       8]   63.992% 	[class: cat]
+ [       7       1      64      27     794      17      53      31       6       0]   79.400% 	[class: deer]
+ [       5       3      43     100      25     769      23      22       4       3]   77.131% 	[class: dog]
+ [       8       3      39      30      28      15     870       6       1       0]   87.000% 	[class: frog]
+ [      13       0      42      38      59      61      13     761       3       7]   76.329% 	[class: horse]
+ [      31      12       4       9       1       3       9       1     911      16]   91.374% 	[class: ship]
+ [      22      49       5      10       1       4       5       7      24     873]]  87.300% 	[class: truck]
+ + average row correct: 80.534576177597% 
+ + average rowUcol correct (VOC measure): 67.973901629448% 
+ + global correct: 80.538862179487%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 145:	
+Training error: 0.10747439180538	Training Loss: 0.31060763012508	
+Test error: 0.19290865384615	Test Loss: 0.60395472754653	
+ConfusionMatrix:
+[[     826      14      23      15      12       4       9       8      58      29]   82.766% 	[class: airplane]
+ [      17     873       2       6       2       5      11       1      17      65]   87.387% 	[class: automobile]
+ [      61       1     691      49      56      50      62      18       6       5]   69.169% 	[class: bird]
+ [      13       3      44     672      44     130      55      16      11       9]   67.402% 	[class: cat]
+ [       7       0      59      44     788      27      44      23       7       1]   78.800% 	[class: deer]
+ [       3       3      21     112      29     765      30      27       6       1]   76.730% 	[class: dog]
+ [       7       2      36      42      22      11     872       4       4       0]   87.200% 	[class: frog]
+ [      13       1      30      39      66      49      10     779       4       6]   78.134% 	[class: horse]
+ [      37      11       2       9       3       1       8       2     909      15]   91.174% 	[class: ship]
+ [      30      36       3      14       1       1       3       8      21     883]]  88.300% 	[class: truck]
+ + average row correct: 80.706241130829% 
+ + average rowUcol correct (VOC measure): 68.215134143829% 
+ + global correct: 80.709134615385%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 150:	
+Training error: 0.10693421895006	Training Loss: 0.30361451852528	
+Test error: 0.19771634615385	Test Loss: 0.62743173692471	
+ConfusionMatrix:
+[[     790      26      17      23      12       5       9      11      62      43]   79.158% 	[class: airplane]
+ [       8     913       2       8       0       2      10       0       7      49]   91.391% 	[class: automobile]
+ [      67       5     669      53      60      50      61      22       7       5]   66.967% 	[class: bird]
+ [      10       7      45     696      48     117      50      12       7       5]   69.809% 	[class: cat]
+ [       8       2      66      35     805      21      35      19       9       0]   80.500% 	[class: deer]
+ [       4       4      29     133      35     744      17      21       6       4]   74.624% 	[class: dog]
+ [       6       3      34      50      27      16     855       4       5       0]   85.500% 	[class: frog]
+ [       7       1      29      46      75      61      10     754       3      11]   75.627% 	[class: horse]
+ [      37      19       0      15       2       3       7       1     896      17]   89.870% 	[class: ship]
+ [      18      50       3      11       0       4       3       5      18     888]]  88.800% 	[class: truck]
+ + average row correct: 80.224646925926% 
+ + average rowUcol correct (VOC measure): 67.582196593285% 
+ + global correct: 80.228365384615%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 155:	
+Training error: 0.10647407170294	Training Loss: 0.30385019612068	
+Test error: 0.19731570512821	Test Loss: 0.61204193207698	
+ConfusionMatrix:
+[[     827      16      28       8      10       3       9      10      61      26]   82.866% 	[class: airplane]
+ [      16     886       1       3       2       2       9       0      22      58]   88.689% 	[class: automobile]
+ [      64       2     678      56      52      45      63      22      11       6]   67.868% 	[class: bird]
+ [      24       7      44     660      36     133      50      21      16       6]   66.199% 	[class: cat]
+ [       9       1      66      40     770      19      51      37       5       2]   77.000% 	[class: deer]
+ [       7       2      26     122      30     744      24      26       9       7]   74.624% 	[class: dog]
+ [       8       3      26      38      24      14     876       6       4       1]   87.600% 	[class: frog]
+ [      17       0      23      34      55      48      10     799       6       5]   80.140% 	[class: horse]
+ [      42      14       4       5       4       1       8       2     903      14]   90.572% 	[class: ship]
+ [      33      38       3      10       2       3       3       7      30     871]]  87.100% 	[class: truck]
+ + average row correct: 80.265688896179% 
+ + average rowUcol correct (VOC measure): 67.523961663246% 
+ + global correct: 80.268429487179%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 160:	
+Training error: 0.10361315620999	Training Loss: 0.29590547099118	
+Test error: 0.19190705128205	Test Loss: 0.62175446299788	
+ConfusionMatrix:
+[[     802      25      40      10       9       1       6      15      65      25]   80.361% 	[class: airplane]
+ [       9     892       2       1       1       2       6       4      14      68]   89.289% 	[class: automobile]
+ [      49       2     709      30      62      44      54      38       7       4]   70.971% 	[class: bird]
+ [      10       6      60     611      44     165      50      35       5      11]   61.284% 	[class: cat]
+ [      12       0      41      28     775      25      33      70      15       1]   77.500% 	[class: deer]
+ [       6       2      26      74      29     785      22      46       3       4]   78.736% 	[class: dog]
+ [       9       4      35      29      31      22     852      11       5       2]   85.200% 	[class: frog]
+ [      16       0      21      19      30      47       3     853       3       5]   85.557% 	[class: horse]
+ [      44       9       8       4       0       2       6       5     906      13]   90.873% 	[class: ship]
+ [      26      41       6       7       0       1       2       8      26     883]]  88.300% 	[class: truck]
+ + average row correct: 80.807032585144% 
+ + average rowUcol correct (VOC measure): 68.150279521942% 
+ + global correct: 80.809294871795%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 165:	
+Training error: 0.10355313700384	Training Loss: 0.29673463476299	
+Test error: 0.19491185897436	Test Loss: 0.62188020415413	
+ConfusionMatrix:
+[[     771      24      47       6       7       1      13      15      90      24]   77.255% 	[class: airplane]
+ [      11     921       5       2       0       0       9       1       9      41]   92.192% 	[class: automobile]
+ [      39       4     751      28      54      24      73      16       8       2]   75.175% 	[class: bird]
+ [      18       7      67     629      48     104      78      19      14      13]   63.089% 	[class: cat]
+ [       8       1      66      28     801      13      48      26       8       1]   80.100% 	[class: deer]
+ [       6       6      43     117      36     704      44      31       3       7]   70.612% 	[class: dog]
+ [       6       3      35      25      26       8     888       5       3       1]   88.800% 	[class: frog]
+ [      12       2      44      29      55      37       9     798       4       7]   80.040% 	[class: horse]
+ [      29      13       7       6       1       1      10       0     915      15]   91.775% 	[class: ship]
+ [      19      71       8       6       0       0       4       7      25     860]]  86.000% 	[class: truck]
+ + average row correct: 80.503843426704% 
+ + average rowUcol correct (VOC measure): 67.749050855637% 
+ + global correct: 80.508814102564%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 170:	
+Training error: 0.10257282330346	Training Loss: 0.29032232543685	
+Test error: 0.19160657051282	Test Loss: 0.60508598062472	
+ConfusionMatrix:
+[[     805      18      32      16      15       3       9      14      62      24]   80.661% 	[class: airplane]
+ [      12     911       7       4       0       2       6       0       7      50]   91.191% 	[class: automobile]
+ [      49       4     723      33      68      27      55      30       6       4]   72.372% 	[class: bird]
+ [      14       8      59     631      49     130      72      21       4       9]   63.290% 	[class: cat]
+ [       4       0      52      23     800      19      42      53       5       2]   80.000% 	[class: deer]
+ [       4       2      34     117      29     727      28      46       5       5]   72.919% 	[class: dog]
+ [       6       4      36      31      29      18     867       6       3       0]   86.700% 	[class: frog]
+ [       8       1      29      21      42      40       3     847       0       6]   84.955% 	[class: horse]
+ [      43      10       5      10       5       2       8       3     887      24]   88.967% 	[class: ship]
+ [      28      48       7       8       1       1       3       9      22     873]]  87.300% 	[class: truck]
+ + average row correct: 80.835527181625% 
+ + average rowUcol correct (VOC measure): 68.313421607018% 
+ + global correct: 80.839342948718%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 175:	
+Training error: 0.1004521446863	Training Loss: 0.2900637097838	
+Test error: 0.19310897435897	Test Loss: 0.62845846991508	
+ConfusionMatrix:
+[[     795      19      34       6      11       1       6      10      84      32]   79.659% 	[class: airplane]
+ [      11     890       4       2       0       2      10       0      16      64]   89.089% 	[class: automobile]
+ [      47       5     752      22      54      28      51      21      11       8]   75.275% 	[class: bird]
+ [      17       4      79     623      41     128      53      23      14      15]   62.487% 	[class: cat]
+ [       7       0      61      37     775      23      43      40      11       3]   77.500% 	[class: deer]
+ [       6       3      52     106      24     725      27      35       8      11]   72.718% 	[class: dog]
+ [       8       5      39      36      20      13     866       8       4       1]   86.600% 	[class: frog]
+ [      17       2      39      19      41      41       4     822       3       9]   82.447% 	[class: horse]
+ [      29      12       4       2       2       3       9       3     916      17]   91.876% 	[class: ship]
+ [      18      44       6       5       1       2       1       7      24     892]]  89.200% 	[class: truck]
+ + average row correct: 80.685227513313% 
+ + average rowUcol correct (VOC measure): 68.005144000053% 
+ + global correct: 80.689102564103%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 180:	
+Training error: 0.099651888604353	Training Loss: 0.28581442185004	
+Test error: 0.18840144230769	Test Loss: 0.61622433230663	
+ConfusionMatrix:
+[[     812      35      32      11      11       2      11      11      52      21]   81.363% 	[class: airplane]
+ [      10     927       2       1       0       1      12       1       6      39]   92.793% 	[class: automobile]
+ [      45       5     725      41      55      34      65      23       5       1]   72.573% 	[class: bird]
+ [      22       7      49     660      51     108      64      21       9       6]   66.199% 	[class: cat]
+ [       6       1      71      33     790      22      39      32       6       0]   79.000% 	[class: deer]
+ [       4       7      32     111      35     738      29      29       7       5]   74.022% 	[class: dog]
+ [       6       6      37      29      25      13     879       3       2       0]   87.900% 	[class: frog]
+ [       8       1      37      28      51      39      10     817       1       5]   81.946% 	[class: horse]
+ [      42      24       3       8       4       2       9       4     886      15]   88.867% 	[class: ship]
+ [      18      68       6       5       3       2       3      11      15     869]]  86.900% 	[class: truck]
+ + average row correct: 81.156118512154% 
+ + average rowUcol correct (VOC measure): 68.738090991974% 
+ + global correct: 81.159855769231%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 185:	
+Training error: 0.098851632522407	Training Loss: 0.28193698119415	
+Test error: 0.19781650641026	Test Loss: 0.65450441999695	
+ConfusionMatrix:
+[[     803      23      48      12      13       1       8      15      55      20]   80.461% 	[class: airplane]
+ [      12     925       3       5       2       4      11       1       5      31]   92.593% 	[class: automobile]
+ [      39       5     754      32      29      33      76      24       3       4]   75.475% 	[class: bird]
+ [      12       4      75     646      24     134      74      17       9       2]   64.794% 	[class: cat]
+ [       6       0      77      42     704      30      91      44       6       0]   70.400% 	[class: deer]
+ [       1       5      44     110      18     758      31      25       3       2]   76.028% 	[class: dog]
+ [       6       4      37      32       7      11     900       2       0       1]   90.000% 	[class: frog]
+ [      12       0      41      41      28      52      13     808       1       1]   81.043% 	[class: horse]
+ [      52      13       9      13       3       2      11       3     876      15]   87.864% 	[class: ship]
+ [      28      82       9      13       0       4       6       7      16     835]]  83.500% 	[class: truck]
+ + average row correct: 80.215817689896% 
+ + average rowUcol correct (VOC measure): 67.569226324558% 
+ + global correct: 80.218349358974%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 190:	
+Training error: 0.098671574903969	Training Loss: 0.28177141006106	
+Test error: 0.19601362179487	Test Loss: 0.62223717627617	
+ConfusionMatrix:
+[[     803      19      46      14       6       4       7      12      59      28]   80.461% 	[class: airplane]
+ [      14     894       5       4       0       4      11       0      13      54]   89.489% 	[class: automobile]
+ [      46       2     734      38      39      55      49      25       7       4]   73.473% 	[class: bird]
+ [      17       4      60     648      31     149      53      20      10       5]   64.995% 	[class: cat]
+ [       8       1      88      40     732      33      40      46      12       0]   73.200% 	[class: deer]
+ [       3       3      34     100      27     778      16      30       3       3]   78.034% 	[class: dog]
+ [       7       3      53      42      21      21     846       3       3       1]   84.600% 	[class: frog]
+ [      10       2      39      35      37      50       4     817       0       3]   81.946% 	[class: horse]
+ [      42      13       5      13       2       3       9       1     887      22]   88.967% 	[class: ship]
+ [      16      49       6      10       0       5       3       5      18     888]]  88.800% 	[class: truck]
+ + average row correct: 80.396571159363% 
+ + average rowUcol correct (VOC measure): 67.878479361534% 
+ + global correct: 80.398637820513%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 195:	
+Training error: 0.095970710627401	Training Loss: 0.27390677521003	
+Test error: 0.19270833333333	Test Loss: 0.64129695735681	
+ConfusionMatrix:
+[[     842      20      31       6       8       5       5      14      51      16]   84.369% 	[class: airplane]
+ [      16     899       4       2       4       5       8       2      12      47]   89.990% 	[class: automobile]
+ [      54       2     727      25      66      48      39      30       5       3]   72.773% 	[class: bird]
+ [      15       4      66     588      49     188      45      26      13       3]   58.977% 	[class: cat]
+ [      10       0      57      26     791      29      25      54       7       1]   79.100% 	[class: deer]
+ [       6       5      35      71      27     800      17      31       5       0]   80.241% 	[class: dog]
+ [      11       4      47      30      43      22     837       4       2       0]   83.700% 	[class: frog]
+ [      11       1      28      17      41      58       4     831       3       3]   83.350% 	[class: horse]
+ [      49      11       6       5       1       3      10       2     897      13]   89.970% 	[class: ship]
+ [      33      57       7       6       0       7       3      11      28     848]]  84.800% 	[class: truck]
+ + average row correct: 80.726910829544% 
+ + average rowUcol correct (VOC measure): 68.182263970375% 
+ + global correct: 80.729166666667%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 200:	
+Training error: 0.098011363636364	Training Loss: 0.27609432151925	
+Test error: 0.19491185897436	Test Loss: 0.63988528553492	
+ConfusionMatrix:
+[[     798      20      42       7      14       3       6      14      68      26]   79.960% 	[class: airplane]
+ [      11     894       2       1       2       2       9       1      17      60]   89.489% 	[class: automobile]
+ [      50       1     716      23      53      47      70      31       5       3]   71.672% 	[class: bird]
+ [      16       4      63     557      59     166      73      28      23       8]   55.868% 	[class: cat]
+ [       9       0      56      17     811      18      41      37      10       1]   81.100% 	[class: deer]
+ [       7       2      33      75      35     777      26      31       8       3]   77.934% 	[class: dog]
+ [       8       4      38      28      32      16     866       5       2       1]   86.600% 	[class: frog]
+ [       9       0      26      21      46      45       6     837       5       2]   83.952% 	[class: horse]
+ [      36       9       9       8       3       3       7       1     904      17]   90.672% 	[class: ship]
+ [      22      45       7       7       2       0       3      11      25     878]]  87.800% 	[class: truck]
+ + average row correct: 80.504634976387% 
+ + average rowUcol correct (VOC measure): 67.754921317101% 
+ + global correct: 80.508814102564%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 205:	
+Training error: 0.096911011523688	Training Loss: 0.27233574498402	
+Test error: 0.19391025641026	Test Loss: 0.62909831049351	
+ConfusionMatrix:
+[[     826      16      31      12       5       1       8      12      66      21]   82.766% 	[class: airplane]
+ [      18     892       0       0       0       1       8       1      12      67]   89.289% 	[class: automobile]
+ [      69       7     701      41      41      36      57      35       6       6]   70.170% 	[class: bird]
+ [      22      10      44     643      44     111      61      33      13      16]   64.493% 	[class: cat]
+ [      14       1      75      34     763      17      29      57       9       1]   76.300% 	[class: deer]
+ [      11       6      26     123      30     720      25      44       3       9]   72.217% 	[class: dog]
+ [      11       7      35      28      32      13     862       8       2       2]   86.200% 	[class: frog]
+ [      18       1      24      30      27      35       2     853       2       5]   85.557% 	[class: horse]
+ [      38      12       4       7       2       3       6       2     901      22]   90.371% 	[class: ship]
+ [      31      42       3       6       2       0       1       8      20     887]]  88.700% 	[class: truck]
+ + average row correct: 80.606290698051% 
+ + average rowUcol correct (VOC measure): 67.898346781731% 
+ + global correct: 80.608974358974%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 210:	
+Training error: 0.094290172855314	Training Loss: 0.27038879703048	
+Test error: 0.19090544871795	Test Loss: 0.62844456273776	
+ConfusionMatrix:
+[[     832      17      27      10       6       1       8      12      65      20]   83.367% 	[class: airplane]
+ [      16     912       4       1       1       4       8       0       8      45]   91.291% 	[class: automobile]
+ [      58       3     709      41      46      46      67      20       5       4]   70.971% 	[class: bird]
+ [      18       3      53     613      32     167      71      16      15       9]   61.484% 	[class: cat]
+ [       9       2      61      31     770      36      53      28      10       0]   77.000% 	[class: deer]
+ [       8       4      23      80      25     796      27      24       5       5]   79.840% 	[class: dog]
+ [      10       4      35      34      16      15     879       3       3       1]   87.900% 	[class: frog]
+ [      19       2      25      29      40      74       6     793       3       6]   79.539% 	[class: horse]
+ [      50      15       1       6       1       3       7       1     899      14]   90.171% 	[class: ship]
+ [      30      58       4       6       1       1       3       6      16     875]]  87.500% 	[class: truck]
+ + average row correct: 80.906208753586% 
+ + average rowUcol correct (VOC measure): 68.412264883518% 
+ + global correct: 80.909455128205%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 215:	
+Training error: 0.09479033290653	Training Loss: 0.26774691990678	
+Test error: 0.19991987179487	Test Loss: 0.65107689196101	
+ConfusionMatrix:
+[[     782      22      29      13      12       0      19      11      82      28]   78.357% 	[class: airplane]
+ [       8     876       1       4       2       3      14       2      16      73]   87.688% 	[class: automobile]
+ [      50       5     679      43      67      38      76      26       9       6]   67.968% 	[class: bird]
+ [       7       5      46     659      43      94      82      29      16      16]   66.098% 	[class: cat]
+ [       6       0      51      31     815      15      46      25       9       2]   81.500% 	[class: deer]
+ [       2       3      25     146      39     682      39      39      11      11]   68.405% 	[class: dog]
+ [       6       3      35      32      25      10     880       3       6       0]   88.000% 	[class: frog]
+ [       8       3      31      37      54      28      14     811       3       8]   81.344% 	[class: horse]
+ [      31       9       6       6       4       0      11       1     908      21]   91.073% 	[class: ship]
+ [      18      38       3       6       1       0       6       7      25     896]]  89.600% 	[class: truck]
+ + average row correct: 80.00331401825% 
+ + average rowUcol correct (VOC measure): 67.067764401436% 
+ + global correct: 80.008012820513%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 220:	
+Training error: 0.091849391805378	Training Loss: 0.26413405496775	
+Test error: 0.19381009615385	Test Loss: 0.64166098145338	
+ConfusionMatrix:
+[[     811      23      35       9       9       3       8      11      65      24]   81.263% 	[class: airplane]
+ [      11     908       3       4       0       0      11       0       9      53]   90.891% 	[class: automobile]
+ [      55       7     648      53      73      54      68      26       9       6]   64.865% 	[class: bird]
+ [      15       4      41     654      44     137      54      21      15      12]   65.597% 	[class: cat]
+ [      15       0      37      36     797      28      34      36      16       1]   79.700% 	[class: deer]
+ [       4       4      22     105      28     771      22      25       8       8]   77.332% 	[class: dog]
+ [       9       3      18      30      29      19     882       4       4       2]   88.200% 	[class: frog]
+ [      12       2      26      44      46      47       8     798       5       9]   80.040% 	[class: horse]
+ [      42      16       7       8       2       2       5       0     901      14]   90.371% 	[class: ship]
+ [      18      53       3       5       1       2       6       6      27     879]]  87.900% 	[class: truck]
+ + average row correct: 80.615829825401% 
+ + average rowUcol correct (VOC measure): 67.935551404953% 
+ + global correct: 80.618990384615%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 225:	
+Training error: 0.092929737516005	Training Loss: 0.26118835230643	
+Test error: 0.19260817307692	Test Loss: 0.64651983460555	
+ConfusionMatrix:
+[[     845      15      36      12       8       2       6      15      43      16]   84.669% 	[class: airplane]
+ [      20     888       4       5       2       5      19       3       6      47]   88.889% 	[class: automobile]
+ [      39       2     737      39      58      35      59      25       4       1]   73.774% 	[class: bird]
+ [      18       3      62     609      51     162      64      19       4       5]   61.083% 	[class: cat]
+ [      10       0      56      26     802      26      40      35       5       0]   80.200% 	[class: deer]
+ [       6       2      31      96      37     773      29      19       2       2]   77.533% 	[class: dog]
+ [       9       3      36      33      26      17     872       4       0       0]   87.200% 	[class: frog]
+ [       8       1      31      29      45      47       9     823       3       1]   82.548% 	[class: horse]
+ [      70      12       6      10       4       3      13       7     859      13]   86.158% 	[class: ship]
+ [      33      55       8       7       3       3       4      16      18     853]]  85.300% 	[class: truck]
+ + average row correct: 80.735396146774% 
+ + average rowUcol correct (VOC measure): 68.268189132214% 
+ + global correct: 80.739182692308%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 230:	
+Training error: 0.089908770806658	Training Loss: 0.25875447634202	
+Test error: 0.19691506410256	Test Loss: 0.67152283646357	
+ConfusionMatrix:
+[[     768      19      58       9      13       2       6      11      88      24]   76.954% 	[class: airplane]
+ [      18     887       3       2       1       3       7       1       9      68]   88.789% 	[class: automobile]
+ [      34       5     785      20      55      31      45      14       5       5]   78.579% 	[class: bird]
+ [      16       7      83     539      63     164      73      20      17      15]   54.062% 	[class: cat]
+ [       6       0      68      16     827      16      30      24      12       1]   82.700% 	[class: deer]
+ [       3       4      46      58      54     757      34      21      10      10]   75.928% 	[class: dog]
+ [       7       3      46      14      39      10     874       2       4       1]   87.400% 	[class: frog]
+ [      13       2      54      18      72      47       9     769       6       7]   77.131% 	[class: horse]
+ [      23      11       7       4       2       2      10       2     920      16]   92.277% 	[class: ship]
+ [      21      38       7       2       1       3       1       6      29     892]]  89.200% 	[class: truck]
+ + average row correct: 80.301947593689% 
+ + average rowUcol correct (VOC measure): 67.438292205334% 
+ + global correct: 80.308493589744%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 235:	
+Training error: 0.091329225352113	Training Loss: 0.25954804119204	
+Test error: 0.19360977564103	Test Loss: 0.65108452059138	
+ConfusionMatrix:
+[[     787      19      44      20       9       2      13      15      67      22]   78.858% 	[class: airplane]
+ [       9     899       3       2       3       4      12       1       8      58]   89.990% 	[class: automobile]
+ [      37       4     711      51      45      45      78      19       4       5]   71.171% 	[class: bird]
+ [       6       7      54     658      37     144      60      18       7       6]   65.998% 	[class: cat]
+ [       3       0      57      41     762      25      72      30       9       1]   76.200% 	[class: deer]
+ [       3       3      29     110      30     765      32      19       4       2]   76.730% 	[class: dog]
+ [       3       1      24      36      18      16     898       2       2       0]   89.800% 	[class: frog]
+ [       8       2      25      45      47      54       7     801       2       6]   80.341% 	[class: horse]
+ [      43      17       7      12       2       3      12       3     882      16]   88.465% 	[class: ship]
+ [      19      41      10       8       1       2       4       8      19     888]]  88.800% 	[class: truck]
+ + average row correct: 80.635348558426% 
+ + average rowUcol correct (VOC measure): 68.169234097004% 
+ + global correct: 80.639022435897%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 240:	
+Training error: 0.089228553137004	Training Loss: 0.25085393796352	
+Test error: 0.19611378205128	Test Loss: 0.67158418912918	
+ConfusionMatrix:
+[[     817      25      24       4      16       3       9      11      64      25]   81.864% 	[class: airplane]
+ [      11     902       2       1       0       1      10       1      11      60]   90.290% 	[class: automobile]
+ [      55       4     664      29      86      39      79      29       8       6]   66.466% 	[class: bird]
+ [      21      11      48     566      66     142      78      29      22      14]   56.770% 	[class: cat]
+ [      10       2      34      21     830      19      40      36       8       0]   83.000% 	[class: deer]
+ [      10       5      25      77      44     759      32      32       6       7]   76.128% 	[class: dog]
+ [       6       4      21      29      34      18     879       5       3       1]   87.900% 	[class: frog]
+ [       9       1      25      14      64      45       5     825       4       5]   82.748% 	[class: horse]
+ [      48      15       1       2       1       4      10       1     903      12]   90.572% 	[class: ship]
+ [      26      50       4       3       1       0       4       7      24     881]]  88.100% 	[class: truck]
+ + average row correct: 80.383914113045% 
+ + average rowUcol correct (VOC measure): 67.451922297478% 
+ + global correct: 80.388621794872%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 245:	
+Training error: 0.088368277848912	Training Loss: 0.25083967598773	
+Test error: 0.19891826923077	Test Loss: 0.66972951552807	
+ConfusionMatrix:
+[[     759      17      62      20      10       3      13      16      65      33]   76.052% 	[class: airplane]
+ [      13     870       2       4       1       5      11       2      10      81]   87.087% 	[class: automobile]
+ [      32       2     684      66      54      60      70      22       5       4]   68.468% 	[class: bird]
+ [       4       2      42     674      40     144      61      16       7       7]   67.603% 	[class: cat]
+ [       5       0      44      42     796      35      39      31       7       1]   79.600% 	[class: deer]
+ [       3       3      16     115      28     785      20      19       4       4]   78.736% 	[class: dog]
+ [       4       3      27      45      25      25     865       4       2       0]   86.500% 	[class: frog]
+ [       2       0      25      43      53      76       9     781       2       6]   78.335% 	[class: horse]
+ [      40      12       9      11       4       4       9       2     885      21]   88.766% 	[class: ship]
+ [      14      43       6       9       0       7       4       5      13     899]]  89.900% 	[class: truck]
+ + average row correct: 80.104798674583% 
+ + average rowUcol correct (VOC measure): 67.470841109753% 
+ + global correct: 80.108173076923%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 250:	
+Training error: 0.086967829705506	Training Loss: 0.24705993923121	
+Test error: 0.19330929487179	Test Loss: 0.65303771503461	
+ConfusionMatrix:
+[[     818      16      54       9       9       1      12      10      45      24]   81.964% 	[class: airplane]
+ [      14     896       6       3       1       2      15       0       7      55]   89.690% 	[class: automobile]
+ [      46       2     773      24      45      28      54      18       5       4]   77.377% 	[class: bird]
+ [      13       3      78     620      47     125      73      24       9       5]   62.187% 	[class: cat]
+ [       7       0      88      29     787      13      44      26       6       0]   78.700% 	[class: deer]
+ [       5       1      56      97      40     736      29      26       4       3]   73.821% 	[class: dog]
+ [       7       2      44      22      17      15     888       2       3       0]   88.800% 	[class: frog]
+ [      12       2      48      30      61      42      10     784       4       4]   78.636% 	[class: horse]
+ [      64      13       8       4       2       2       8       4     877      15]   87.964% 	[class: ship]
+ [      28      45       7       8       3       1       6       8      19     875]]  87.500% 	[class: truck]
+ + average row correct: 80.663881897926% 
+ + average rowUcol correct (VOC measure): 68.183230161667% 
+ + global correct: 80.669070512821%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 255:	
+Training error: 0.087968149807939	Training Loss: 0.24657119864004	
+Test error: 0.19561298076923	Test Loss: 0.65067679415911	
+ConfusionMatrix:
+[[     805      18      25      14      11       3       8      13      72      29]   80.661% 	[class: airplane]
+ [      11     885       4       0       1       4       8       3      16      67]   88.589% 	[class: automobile]
+ [      57       2     709      50      48      47      54      26       4       2]   70.971% 	[class: bird]
+ [      14       2      58     667      39     144      45      14       8       6]   66.901% 	[class: cat]
+ [       8       0      68      55     762      39      23      36       8       1]   76.200% 	[class: deer]
+ [       5       4      30     119      26     765      18      21       6       3]   76.730% 	[class: dog]
+ [       8       1      32      42      28      24     853       5       4       3]   85.300% 	[class: frog]
+ [      11       0      32      43      44      58       5     795       2       7]   79.739% 	[class: horse]
+ [      38       7       7       8       1       4       4       2     913      13]   91.575% 	[class: ship]
+ [      20      43       9       6       1       3       3       6      32     877]]  87.700% 	[class: truck]
+ + average row correct: 80.436571240425% 
+ + average rowUcol correct (VOC measure): 67.934609651566% 
+ + global correct: 80.438701923077%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 260:	
+Training error: 0.08764804737516	Training Loss: 0.24785682807048	
+Test error: 0.20042067307692	Test Loss: 0.67497598742827	
+ConfusionMatrix:
+[[     816      16      33       6      13       0      11       8      71      24]   81.764% 	[class: airplane]
+ [      18     907       3       0       3       1      16       1      11      39]   90.791% 	[class: automobile]
+ [      52       4     752      27      36      28      72      15       9       4]   75.275% 	[class: bird]
+ [      31       3      80     591      39     104      99      25      18       7]   59.278% 	[class: cat]
+ [      10       0      78      27     738      21      76      42       8       0]   73.800% 	[class: deer]
+ [      10       2      53     101      31     708      49      32       5       6]   71.013% 	[class: dog]
+ [       9       5      27      20      11       7     917       2       1       1]   91.700% 	[class: frog]
+ [      16       1      48      26      43      40      18     797       4       4]   79.940% 	[class: horse]
+ [      40       8       5       3       2       3      12       1     914       9]   91.675% 	[class: ship]
+ [      31      65       7       5       0       4       8      10      27     843]]  84.300% 	[class: truck]
+ + average row correct: 79.95353102684% 
+ + average rowUcol correct (VOC measure): 67.015803456306% 
+ + global correct: 79.957932692308%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 265:	
+Training error: 0.086967829705506	Training Loss: 0.24462011769395	
+Test error: 0.19370993589744	Test Loss: 0.6424831127127	
+ConfusionMatrix:
+[[     804      22      43      13       9       0      10      16      59      22]   80.561% 	[class: airplane]
+ [      15     896       5       1       2       2       8       4       8      58]   89.690% 	[class: automobile]
+ [      42       3     751      32      50      34      44      37       4       2]   75.175% 	[class: bird]
+ [      14       2      72     653      47      98      65      31      10       5]   65.496% 	[class: cat]
+ [      11       0      66      30     781      22      36      46       7       1]   78.100% 	[class: deer]
+ [       7       3      40     125      29     720      26      40       4       3]   72.217% 	[class: dog]
+ [      10       5      43      38      23       9     863       7       2       0]   86.300% 	[class: frog]
+ [       9       0      32      35      45      40       7     825       3       1]   82.748% 	[class: horse]
+ [      56      15       9       5       2       2       7       3     882      16]   88.465% 	[class: ship]
+ [      25      45       7       6       1       0       3      17      21     875]]  87.500% 	[class: truck]
+ + average row correct: 80.625277161598% 
+ + average rowUcol correct (VOC measure): 68.058885931969% 
+ + global correct: 80.629006410256%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 270:	
+Training error: 0.085507362355954	Training Loss: 0.24031050191303	
+Test error: 0.1924078525641	Test Loss: 0.666654504358	
+ConfusionMatrix:
+[[     794      23      26      16      14       4      12      15      58      36]   79.559% 	[class: airplane]
+ [       9     881       1       4       1       1       9       4       9      80]   88.188% 	[class: automobile]
+ [      51       2     671      56      55      40      70      43       6       5]   67.167% 	[class: bird]
+ [       7       5      40     634      48     147      59      35       8      14]   63.591% 	[class: cat]
+ [       6       0      45      33     789      29      40      50       7       1]   78.900% 	[class: deer]
+ [       9       1      17      97      31     769      29      37       4       3]   77.131% 	[class: dog]
+ [       5       6      27      34      19      18     882       7       1       1]   88.200% 	[class: frog]
+ [       5       1      15      21      43      44       4     858       2       4]   86.058% 	[class: horse]
+ [      45      18       5       6       2       3      12       5     876      25]   87.864% 	[class: ship]
+ [      17      34       4       6       1       2       2       8      17     909]]  90.900% 	[class: truck]
+ + average row correct: 80.755840539932% 
+ + average rowUcol correct (VOC measure): 68.098438084126% 
+ + global correct: 80.75921474359%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 275:	
+Training error: 0.084186939820743	Training Loss: 0.24046399710502	
+Test error: 0.19521233974359	Test Loss: 0.66371887148573	
+ConfusionMatrix:
+[[     808      20      33      11      13       1       6      10      66      30]   80.962% 	[class: airplane]
+ [      15     882       2       3       1       1       7       0      14      74]   88.288% 	[class: automobile]
+ [      52       4     699      47      62      42      60      21       6       6]   69.970% 	[class: bird]
+ [      10       5      49     639      59     133      59      18      13      12]   64.092% 	[class: cat]
+ [       8       1      59      30     798      24      45      28       5       2]   79.800% 	[class: deer]
+ [       7       2      24     100      43     760      24      26       4       7]   76.229% 	[class: dog]
+ [       7       5      33      31      32      20     862       2       5       3]   86.200% 	[class: frog]
+ [      10       0      32      38      55      54       6     782       4      16]   78.435% 	[class: horse]
+ [      43       9       5       7       2       3       7       1     905      15]   90.772% 	[class: ship]
+ [      18      41       5       6       0       3       2       3      22     900]]  90.000% 	[class: truck]
+ + average row correct: 80.474876761436% 
+ + average rowUcol correct (VOC measure): 67.799751162529% 
+ + global correct: 80.478766025641%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 280:	
+Training error: 0.084066901408451	Training Loss: 0.23745029078136	
+Test error: 0.19090544871795	Test Loss: 0.67097470164299	
+ConfusionMatrix:
+[[     819      20      31      11       4       1      14       8      65      25]   82.064% 	[class: airplane]
+ [      18     889       3       3       1       2      13       0      11      59]   88.989% 	[class: automobile]
+ [      53       3     735      39      44      28      62      21       9       5]   73.574% 	[class: bird]
+ [      14       8      56     675      30     120      52      20      12      10]   67.703% 	[class: cat]
+ [      11       1      73      48     756      27      36      36      10       2]   75.600% 	[class: deer]
+ [       9       3      33     110      24     748      28      29       7       6]   75.025% 	[class: dog]
+ [       5       4      32      44      21      12     878       3       1       0]   87.800% 	[class: frog]
+ [      13       2      29      34      47      50      11     799       5       7]   80.140% 	[class: horse]
+ [      47      10       4       5       3       1       9       2     895      21]   89.769% 	[class: ship]
+ [      21      42       3       6       1       3       7       4      29     884]]  88.400% 	[class: truck]
+ + average row correct: 80.906460881233% 
+ + average rowUcol correct (VOC measure): 68.373273015022% 
+ + global correct: 80.909455128205%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 285:	
+Training error: 0.085647407170295	Training Loss: 0.24125466378413	
+Test error: 0.19801682692308	Test Loss: 0.67800510187562	
+ConfusionMatrix:
+[[     769      35      46      12      14       3      19      14      46      40]   77.054% 	[class: airplane]
+ [       6     920       3       2       1       3      11       1       1      51]   92.092% 	[class: automobile]
+ [      35       3     748      38      46      35      66      23       2       3]   74.875% 	[class: bird]
+ [       9       8      71     618      47     130      73      27       6       8]   61.986% 	[class: cat]
+ [       6       0      77      29     764      24      57      38       4       1]   76.400% 	[class: deer]
+ [       3       5      39     109      34     734      34      32       1       6]   73.621% 	[class: dog]
+ [       3       5      33      26      18      14     895       5       1       0]   89.500% 	[class: frog]
+ [       5       1      35      28      44      44      14     820       1       5]   82.247% 	[class: horse]
+ [      52      23       9       7       2       2      15       4     855      28]   85.757% 	[class: ship]
+ [      16      64       7       6       1       4       3       4      11     884]]  88.400% 	[class: truck]
+ + average row correct: 80.1931899786% 
+ + average rowUcol correct (VOC measure): 67.429446280003% 
+ + global correct: 80.198317307692%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 290:	
+Training error: 0.084387003841229	Training Loss: 0.23818343849173	
+Test error: 0.19070512820513	Test Loss: 0.66357158898161	
+ConfusionMatrix:
+[[     829      20      23       8       6       2       8      13      62      27]   83.066% 	[class: airplane]
+ [      17     886       1       1       1       4      10       1       9      69]   88.689% 	[class: automobile]
+ [      54       7     694      33      62      37      72      27       8       5]   69.469% 	[class: bird]
+ [      17       7      55     601      65     125      63      35      16      13]   60.281% 	[class: cat]
+ [      13       1      38      18     820      18      36      46      10       0]   82.000% 	[class: deer]
+ [       9       3      34      91      41     731      31      37       9      11]   73.320% 	[class: dog]
+ [       6       5      25      26      29      11     888       7       2       1]   88.800% 	[class: frog]
+ [      12       1      23      21      52      37       5     838       1       7]   84.052% 	[class: horse]
+ [      44      10       1       5       3       1      10       2     908      13]   91.073% 	[class: ship]
+ [      26      44       5       3       0       1       5      10      21     885]]  88.500% 	[class: truck]
+ + average row correct: 80.925046801567% 
+ + average rowUcol correct (VOC measure): 68.225427269936% 
+ + global correct: 80.929487179487%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 295:	
+Training error: 0.081486075544174	Training Loss: 0.232331323658	
+Test error: 0.19050480769231	Test Loss: 0.66499410092066	
+ConfusionMatrix:
+[[     835      18      38       5       5       1       7      10      57      22]   83.667% 	[class: airplane]
+ [      19     892       2       3       0       0      11       0       7      65]   89.289% 	[class: automobile]
+ [      50       4     733      32      58      38      47      25       6       6]   73.373% 	[class: bird]
+ [      27       7      61     633      54     119      49      29       8      10]   63.490% 	[class: cat]
+ [      12       0      62      33     794      29      26      35       8       1]   79.400% 	[class: deer]
+ [      12       3      31     103      29     737      28      38       5      11]   73.922% 	[class: dog]
+ [       9       4      43      39      31      16     848       7       3       0]   84.800% 	[class: frog]
+ [      17       0      34      30      45      33       4     826       2       6]   82.849% 	[class: horse]
+ [      49      10       7       4       3       0       9       1     891      23]   89.368% 	[class: ship]
+ [      25      40       7       4       1       0       3       8      19     893]]  89.300% 	[class: truck]
+ + average row correct: 80.945888161659% 
+ + average rowUcol correct (VOC measure): 68.466362953186% 
+ + global correct: 80.949519230769%	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+before shuffle	
+after shuffle	
+after train loss	
+after test loss	
+Epoch 300:	
+Training error: 0.081145966709347	Training Loss: 0.23047911045684	
+Test error: 0.19000400641026	Test Loss: 0.67327563283153	
+ConfusionMatrix:
+[[     832      19      30      12       8       1       6      13      55      22]   83.367% 	[class: airplane]
+ [      14     893       3       1       1       1       9       1       6      70]   89.389% 	[class: automobile]
+ [      51       3     738      34      57      36      40      29       5       6]   73.874% 	[class: bird]
+ [      19       7      57     623      51     127      62      36       7       8]   62.487% 	[class: cat]
+ [       8       1      63      35     784      26      26      48       8       1]   78.400% 	[class: deer]
+ [       7       3      32      94      33     754      22      41       4       7]   75.627% 	[class: dog]
+ [      10       4      52      39      34      15     838       5       2       1]   83.800% 	[class: frog]
+ [      13       1      26      25      33      40       8     845       2       4]   84.754% 	[class: horse]
+ [      49      13       1       9       1       2       9       4     885      24]   88.766% 	[class: ship]
+ [      24      43       6       4       0       1       2       7      18     895]]  89.500% 	[class: truck]
+ + average row correct: 80.996490120888% 
+ + average rowUcol correct (VOC measure): 68.511169850826% 
+ + global correct: 80.999599358974%	
+automobile	
+  3
+ 32
+ 32
+[torch.LongStorage of size 3]
+
+ 0.0051
+ 0.5121
+ 0.0094
+ 0.0010
+ 0.0002
+ 0.0001
+ 0.4603
+ 0.0009
+ 0.0006
+ 0.0104
+[torch.CudaTensor of size 10]
+
+saving the model as network.model	

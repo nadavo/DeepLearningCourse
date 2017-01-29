@@ -3,7 +3,6 @@ require 'image'
 require 'nn'
 require 'cunn'
 require 'cudnn'
---require './dataAugmentation.lua'
 
 function saveTensorAsGrid(tensor,fileName)
 	local padding = 1
@@ -222,7 +221,7 @@ end
 
 ---------------------------------------------------------------------
 print("epoch time")
-epochs = 300 --50
+epochs = 300
 trainLoss = torch.Tensor(epochs)
 testLoss = torch.Tensor(epochs)
 trainError = torch.Tensor(epochs)
